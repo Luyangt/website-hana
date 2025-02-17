@@ -1,0 +1,58 @@
+/* Research Page Styling */
+.project-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: "Arial", sans-serif;
+  }
+  
+  .project-page h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Content Layout */
+  .content {
+    display: flex;
+    gap: 30px; /* Space between the two sections */
+  }
+  
+  /* Left Section: Topics */
+  .topics {
+    flex: 1; /* Make it take 1 part of the layout */
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between each topic */
+  }
+  
+  .topic-link {
+    text-decoration: none;
+  }
+  
+  .topic-item {
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    font-size: 1.2rem;
+    color:black; 
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .topic-item:hover {
+    background-color: #ffb500; 
+    color: white; /* White text on hover */
+  }
+  
+  /* Right Section: Image */
+  .image {
+    flex: 2; /* Make it take 2 parts of the layout */
+    text-align: center;
+  }
+  
+  .image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }

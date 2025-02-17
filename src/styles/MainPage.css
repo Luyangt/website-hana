@@ -1,0 +1,35 @@
+
+/* Overall Page Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #F7F7F7; /* Light neutral background */
+  color: #333; /* Dark gray text */
+}
+
+.main-page {
+  max-width: 90%; /* Use a percentage for responsiveness */
+  min-width: 1200px; /* Ensure a minimum width for larger content */
+  margin: 50px auto; /* Center the container and add more vertical spacing */
+  background-color:whitesmoke;
+  padding: 20px;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  overflow: hidden; /* Prevent content from overflowing */
+}
+  
+.main-page .introduction, .main-page .research-areas {
+  padding: 20px;
+}
+
+.main-page .modules {
+  display: flex;
+  justify-content: space-around;
+}
+
+.main-page .module {
+  background-color: #E2E7DF;
+  padding: 10px;
+  text-align: center;
+}
