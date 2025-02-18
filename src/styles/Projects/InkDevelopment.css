@@ -1,0 +1,101 @@
+
+/* Overall container */
+.ink-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: #fdfdfd;
+    font-family: sans-serif;
+  }
+  
+  /* Hero / Header Section */
+  .ink-header-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;                   /* space between image and text */ 
+    margin-bottom: 3rem;
+  }
+
+    /* The image on the left */
+  .ink-header-img.img {
+      display: block;
+      align-items: flex-start;
+      width: 1100px;  
+      height: auto;     
+      border-radius: 8px;
+      margin-top: 1rem auto; 
+    }
+
+    /* The text on the right */
+    .ink-header-text {
+      text-align: center;
+    }
+  
+  /* Title section at the very top */
+  .ink-title-section {
+    margin-bottom: 1rem; /* space below h1 and h4 */
+  }
+  
+  .ink-title-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+  }
+  
+  .ink-title-section h4 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  /* Paragraphs, lists, etc. below the titles */
+  .ink-header-text p {
+    line-height: 1.6;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+  
+ /* Cards / Grid Section */
+.ink-project-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+  
+  .ink-project-cards.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  }
+  
+  /* For card1, arrange the two images side by side */
+  .ink-project-cards.card.card1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Optional: add gap if supported by your browsers */
+    gap: 1rem;
+  }
+  
+  .ink-project-cards.card.card1 img {
+    width: 48%;  /* Each image takes about half the card's width */
+    height: auto;
+    border-radius: 4px;
+  }
+  
+  /* Existing styling for videos and other elements remains unchanged */
+  .ink-project-cards.card-video {
+    width: 300px;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+  }
+  
+  .ink-project-cards.card p {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    color: #333;
+  }
