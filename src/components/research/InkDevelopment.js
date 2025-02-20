@@ -1,5 +1,5 @@
 import React from "react";
-import "../../styles/Projects/InkDevelopment.css";
+import "../../styles/Research/InkDevelopment.css";
 
 
 const InkDevelopment = () => {

@@ -5,7 +5,7 @@ import ClothesCaringMachine from "./clocle-multifunction-machine";
 import GrandTheftAutonomous from "./grand-theft-autonomous";
 import BitcoinExplore from "./BitcoinExplore";
 import Nanofabrication from "./Nanofabrication";
-import InkDevelopment from "./InkDevelopment";
+
 
 const ProjectsSubPage = () => {
     const projectTopics = [
@@ -39,10 +39,6 @@ const ProjectsSubPage = () => {
             <p>
               I have been working on the project of the Diagnostics and Response Strategies for Malaria.
             </p>
-          </section>\
-
-          <section id="inkDevelopment" className="project-section">
-            <InkDevelopment />
           </section>\
 
           <section id="Nanofabrication" className="project-section">

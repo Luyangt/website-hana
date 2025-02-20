@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../../styles/ResearchSubPage.css";
+import "../../styles/Research/ResearchSubPage.css";
+
 
 const SubPage = () => {
     const researchTopics = [
