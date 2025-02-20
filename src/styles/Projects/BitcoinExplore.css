@@ -1,95 +1,88 @@
-
 /* Overall container */
-.BitcoinExplore {
+.bitcoin-explore {
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem;
     background: #fdfdfd;
     font-family: sans-serif;
-  }
+}
   
-  /* Hero / Header Section */
-  .header-section {
+/* Hero / Header Section */
+.bitcoin-header-section {
     text-align: center;
     margin: 0 auto; 
     margin-bottom: 2rem;
-  }
+}
 
-  /* Title section at the very top */
-  .title-section {
+/* Title section at the very top */
+.bitcoin-title-section {
     margin-bottom: 1rem; /* space below h1 and h4 */
-  }
+}
   
-  .title-section h1 {
+.bitcoin-title-section h1 {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
     line-height: 1.2;
-  }
+}
   
-  .title-section h4 {
+.bitcoin-title-section h4 {
     color: #007bff;
     font-size: 1rem;
     text-transform: uppercase;
     letter-spacing: 1px;
-  }
+}
   
-  /* Paragraphs, lists, etc. below the titles */
-  .header-text p,
-  .header-text ul {
+/* Paragraphs, lists, etc. below the titles */
+.header-text p,
+.header-text ul {
     line-height: 1.6;
     font-size: 1.1rem;
     margin-bottom: 1rem;
-  }
+}
 
-  .full-width-img {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-  
-  /* Cards / Grid Section */
-  .project-cards {
+/* Cards / Grid Section */
+.bitcoin-project-cards {
     display: grid;
     /* 2 columns, 3 rows total */
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto;
     /* Define how areas are laid out */
     grid-template-areas:
-      "card1 card2"  /* row 1: card1, card2 */
-      "card3 card3"  /* row 2: card3 occupies full width */
-      "card4 card5"; /* row 3: card4, card5 */
+      "bitcoin-card1 bitcoin-card2"  /* row 1: card1, card2 */
+      "bitcoin-card3 bitcoin-card3"  /* row 2: card3 occupies full width */
+      "bitcoin-card4 bitcoin-card5"; /* row 3: card4, card5 */
     gap: 2rem;       /* space between cards */
-  }
+}
   
-  /* Assign each card to its named grid area */
-  .card1 {
-    grid-area: card1;
-  }
-  .card2 {
-    grid-area: card2;
-  }
-  .card3 {
-    grid-area: card3;
-  }
-  .card4 {
-    grid-area: card4;
-  }
-  .card5 {
-    grid-area: card5;
-  }
+/* Assign each card to its named grid area */
+.bitcoin-card1 {
+    grid-area: bitcoin-card1;
+}
+.bitcoin-card2 {
+    grid-area: bitcoin-card2;
+}
+.bitcoin-card3 {
+    grid-area: bitcoin-card3;
+}
+.bitcoin-card4 {
+    grid-area: bitcoin-card4;
+}
+.bitcoin-card5 {
+    grid-area: bitcoin-card5;
+}
   
-  .card {
+.bitcoin-card {
     background: #fff;
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 1rem;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-  }
+}
   
-  .card img {
+.bitcoin-card img {
     width: 300px;
     height: auto;
     border-radius: 4px;
     margin-bottom: 1rem;
-  }
+}

@@ -1,13 +1,12 @@
 import React from "react";
 import "../../styles/Projects/BitcoinExplore.css";
 
-
 const BitcoinExplore = () => {
   return (
-    <div className="BitcoinExplore">
+    <div className="bitcoin-explore">
       {/* Hero / Header Section */}
-      <div className="header-section">
-        <div className="title-section">
+      <div className="bitcoin-header-section">
+        <div className="bitcoin-title-section">
             <h1>Data analysis Project</h1>
             <h4>Bitcoin explore</h4>
         </div>
@@ -40,9 +39,9 @@ const BitcoinExplore = () => {
 
       
       {/* Cards / Grid Section */}
-      <div className="project-cards">
+      <div className="bitcoin-project-cards">
         {/* Card 1 */}
-        <div className="card card1">
+        <div className="bitcoin-card bitcoin-card1">
           <img
             src="/images/Projects/Bitcoin/Picture1.png"
             alt="Bitcoin trading volume data from major countries" 
@@ -51,7 +50,7 @@ const BitcoinExplore = () => {
         </div>
 
         {/* Card 2 */}
-        <div className="card card2">
+        <div className="bitcoin-card bitcoin-card2">
           <img
             src="/images/Projects/Bitcoin/Picture2.png"
             alt="Relationship between key U.S. economic indicators and Bitcoin prices"
@@ -60,14 +59,14 @@ const BitcoinExplore = () => {
         </div>
 
         {/* Card 3 */}
-        <div className="card card3">
+        <div className="bitcoin-card bitcoin-card3">
         <img src="/images/Projects/Bitcoin/最长的照片.png" 
                 alt="Reddit platform comments related to Bitcoin"
         />
         </div>
 
         {/* Card 4 */}
-        <div className="card card4">
+        <div className="bitcoin-card bitcoin-card4">
           <img
             src="/images/Projects/Bitcoin/Picture3.png"
             alt="Correlation between Bitcoin prices and other assets like gold and Ethereum (ETH)" 
@@ -76,7 +75,7 @@ const BitcoinExplore = () => {
         </div>
 
         {/* Card 5 */}
-        <div className="card card5">
+        <div className="bitcoin-card bitcoin-card5">
           <img
             src="/images/Projects/Bitcoin/Picture5.png"
             alt="Time series model prediction of Bitcoin price trends and the conclusion" 

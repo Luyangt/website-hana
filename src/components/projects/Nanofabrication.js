@@ -4,16 +4,15 @@ import "../../styles/Projects/Nanofabrication.css";
 
 const Nanofabrication = () => {
   return (
-    <div className="Nanofabrication">
-      {/* Hero / Header Section */}
-      <div className="header-section">
-        <img 
-            src="/images/Projects/Nano/Picture1.png"
-            alt="Design and fabrication of a MEMS system" 
-            className="header-img"
-        />
-        <div className="header-text">
-            <div className="title-section">
+    <div className="nano-container">
+    <div className="nano-header-section">
+      <img 
+          src="/images/Projects/Nano/Picture1.png"
+          alt="Design and fabrication of a MEMS system" 
+          className="nano-header-img"
+      />
+      <div className="nano-header-text">
+          <div className="nano-title-section">
                 <h1>Project: Nanofabrication & Nano characterization </h1>
             </div>
             <p>
@@ -51,40 +50,33 @@ const Nanofabrication = () => {
 
       
       {/* Cards / Grid Section */}
-      <div className="project-cards">
-
-        {/* Card 2 */}
-        <div className="card card2">
+      <div className="nano-project-cards">
+        <div className="nano-card nano-card2">
           <img
             src="/images/Projects/Nano/Picture2.png"
             alt="Microstructure design and fabrication for inducing material self-assembly"
           />
-          
         </div>
 
-        {/* Card 3 */}
-        <div className="card card3">
-        <img src="/images/Projects/Nano/Picture3.png" 
-                alt="Fluorescent quantum dots of different sizes produced by varying reaction times"
-        />
+        <div className="nano-card nano-card3">
+          <img 
+            src="/images/Projects/Nano/Picture3.png" 
+            alt="Fluorescent quantum dots of different sizes produced by varying reaction times"
+          />
         </div>
 
-        {/* Card 4 */}
-        <div className="card card4">
+        <div className="nano-card nano-card4">
           <img
             src="/images/Projects/Nano/Picture4.png"
             alt="Example of a 2D sensor design—a graphene-based DNA detection chip" 
           />
-          
         </div>
 
-        {/* Card 5 */}
-        <div className="card card5">
+        <div className="nano-card nano-card5">
           <img
             src="/images/Projects/Nano/Picture5.png"
             alt="Mold used for fabricating microscale kirigami structures" 
           />
-          
         </div>
 
       </div>

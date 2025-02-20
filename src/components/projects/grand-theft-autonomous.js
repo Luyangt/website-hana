@@ -4,17 +4,14 @@ import "../../styles/Projects/grand-theft-autonomous.css";
 
 const GrandTheftAutonomous = () => {
   return (
-    <div className="grand-theft-container">
-      {/* Hero / Header Section */}
-      <div className="header-section">
-        {/* Image on the left */}
+    <div className="gta-container">
+    <div className="gta-header-section">
       <img src="/images/Projects/Grand Theft Autonomous/Picture1.png" 
-            alt="Grand Theft Autonomous"
-            className="header-img"
+          alt="Grand Theft Autonomous"
+          className="gta-header-img"
       />
-       {/* Text on the right */}
-       <div className="header-text">
-        <div className="title-section">
+      <div className="gta-header-text">
+        <div className="gta-title-section">
             <h1>Autonomous Robotics Project</h1>
             <h4>"Grand Theft Autonomous" - Can-Grabbing Robot</h4>
         </div>
@@ -39,10 +36,9 @@ const GrandTheftAutonomous = () => {
       </div>
 
       {/* Cards / Grid Section */}
-      <div className="project-cards">
-        {/* Card 1 */}
-        <div className="card">
-          <video controls className="card-video">
+      <div className="gta-project-cards">
+        <div className="gta-card">
+          <video controls className="gta-card-video">
             <source
               src="/images/Projects/Grand Theft Autonomous/IMG_7127_575BE7AA-FB41-43A7-8E8B-6041E31DBE30.mp4"
               type="video/mp4"
@@ -50,9 +46,8 @@ const GrandTheftAutonomous = () => {
           </video>
         </div>
 
-        {/* Card 2 */}
-        <div className="card">
-          <video controls className="card-video">
+        <div className="gta-card">
+          <video controls className="gta-card-video">
             <source
               src="/images/Projects/Grand Theft Autonomous/1320.mp4"
               type="video/mp4"

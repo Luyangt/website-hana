@@ -4,17 +4,15 @@ import "../../styles/Projects/ClocleMultifunction.css";
 
 const ClothesCaringMachine = () => {
   return (
-    <div className="Clothes-Caring-Machine-container">
+    <div className="clocle-container">
       {/* Hero / Header Section */}
-      <div className="header-section">
-        {/* Image on the left */}
-      <img src="/images/Projects/Clothes Caring Machine/Picture3.png" 
+      <div className="clocle-header-section">
+        <img src="/images/Projects/Clothes Caring Machine/Picture3.png" 
             alt="Clothes Caring Machine"
-            className="header-img"
-      />
-       {/* Text on the right */}
-       <div className="header-text">
-        <div className="title-section">
+            className="clocle-header-img"
+        />
+        <div className="clocle-header-text">
+          <div className="clocle-title-section">
             <h1>Product Design Project</h1>
             <h4>Cloclé Multifunction Clothes Caring Machine</h4>
         </div>
@@ -46,9 +44,8 @@ const ClothesCaringMachine = () => {
       </div>
 
       {/* Cards / Grid Section */}
-      <div className="project-cards">
-        {/* Card 1 */}
-        <div className="card">
+      <div className="clocle-project-cards">
+        <div className="clocle-card">
           <img
             src="/images/Projects/Clothes Caring Machine/Picture1.png"
             alt="I'm designing the clothes caring machine model" 
@@ -56,8 +53,7 @@ const ClothesCaringMachine = () => {
           <h3>I'm designing the clothes caring machine model</h3>
         </div>
 
-        {/* Card 2 */}
-        <div className="card">
+        <div className="clocle-card">
           <img
             src="/images/Projects/Clothes Caring Machine/Picture2.png"
             alt="Clothes Caring Machine Advertising image"
