@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../../styles/Research/ResearchSubPage.css";
+import InkDevelopment from "./InkDevelopment";
 
-
-const SubPage = () => {
+const ResearchSubPage = () => {
     const researchTopics = [
       { title: "Development of Intelligent 3D Printing System", link: "/research/intelligent-3D-printing" },
       { title: "Actuators and Control Systems Design for Soft Robotics", link: "/research/actuators-soft-robotics" },
@@ -13,22 +13,30 @@ const SubPage = () => {
     ];
 
     return (
-      <div className="research-page">
-        <h1>Research</h1>
-        <div className="content">
-          <div className="topics">
-            {researchTopics.map((topic, index) => (
-              <Link to={topic.link} key={index} className="topic-link">
-                <div className="topic-item">{topic.title}</div>
-              </Link>
-            ))}
+      <div className="research-container">
+        <div className="research-header">
+          <h1 className="research-title">Research</h1>
+          <div className="research-content-wrapper">
+            <div className="research-topics-list">
+              {researchTopics.map((topic, index) => (
+                <Link to={topic.link} key={index} className="research-topic-link">
+                  <div className="research-topic-item">{topic.title}</div>
+                </Link>
+              ))}
+            </div>
+            <div className="research-image-container">
+              <img src="/images/research-image.png" alt="Research Visualization" className="research-hero-image" />
+            </div>
           </div>
-          <div className="image">
-            <img src="/images/research-image.png" alt="Research Visualization" />
-          </div>
+        </div>
+
+        <div className="research-main-content">
+          <section className="research-section">
+            <InkDevelopment />
+          </section>
         </div>
       </div>
     );
-  };
-  
-export default SubPage;
+};
+
+export default ResearchSubPage;

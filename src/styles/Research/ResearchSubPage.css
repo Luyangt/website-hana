@@ -1,58 +1,67 @@
 /* Research Page Styling */
-.research-page {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    font-family: "Arial", sans-serif;
-  }
-  
-  .research-page h1 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: #333;
-  }
-  
-  /* Content Layout */
-  .content {
-    display: flex;
-    gap: 30px; /* Space between the two sections */
-  }
-  
-  /* Left Section: Topics */
-  .topics {
-    flex: 1; /* Make it take 1 part of the layout */
-    display: flex;
-    flex-direction: column;
-    gap: 15px; /* Space between each topic */
-  }
-  
-  .topic-link {
-    text-decoration: none;
-  }
-  
-  .topic-item {
-    padding: 10px 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-    font-size: 1.2rem;
-    color:black; 
-    transition: background-color 0.3s, color 0.3s;
-  }
-  
-  .topic-item:hover {
-    background-color: #ffb500; 
-    color: white; /* White text on hover */
-  }
-  
-  /* Right Section: Image */
-  .image {
-    flex: 2; /* Make it take 2 parts of the layout */
-    text-align: center;
-  }
-  
-  .image img {
-    max-width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
+.research-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: "Arial", sans-serif;
+}
+
+.research-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Content Layout */
+.research-content-wrapper {
+  display: flex;
+  gap: 30px;
+}
+
+/* Left Section: Topics */
+.research-topics-list {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.research-topic-link {
+  text-decoration: none;
+}
+
+.research-topic-item {
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  font-size: 1.2rem;
+  color: black;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.research-topic-item:hover {
+  background-color: #ffb500;
+  color: white;
+}
+
+/* Right Section: Image */
+.research-image-container {
+  flex: 2;
+  text-align: center;
+}
+
+.research-hero-image {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Main Content Section */
+.research-main-content {
+  margin-top: 40px;
+}
+
+.research-section {
+  margin-bottom: 40px;
+}

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../../styles/ProjectsSubPage.css";
+import "../../styles/Projects/ProjectsSubPage.css";
 import ClothesCaringMachine from "./clocle-multifunction-machine";
 import GrandTheftAutonomous from "./grand-theft-autonomous";
 import BitcoinExplore from "./BitcoinExplore";
@@ -34,12 +34,6 @@ const ProjectsSubPage = () => {
 
        {/* Project Sections */}
         <div className="project-content">
-          <section id="diagnostics-response-malaria" className="project-section">
-            <h2>The Diagnostics and Response Strategies for Malaria</h2>
-            <p>
-              I have been working on the project of the Diagnostics and Response Strategies for Malaria.
-            </p>
-          </section>\
 
           <section id="Nanofabrication" className="project-section">
             <Nanofabrication />\
