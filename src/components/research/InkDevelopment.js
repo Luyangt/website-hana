@@ -9,7 +9,7 @@ const InkDevelopment = () => {
       <div className="ink-header-section">
         {/* Image on the left */}
         <div className="ink-header-img">
-            <img src="/images/Projects/InkDevelopment/Picture1.png" 
+            <img src="/images/Research/InkDevelopment/Picture1.png" 
                 alt="Materials previously explored for Direct Ink Writing (DIW) 3D printing" 
             />
             <h4>Materials previously explored for Direct Ink Writing (DIW) 3D printing</h4>
@@ -42,12 +42,12 @@ const InkDevelopment = () => {
          {/* Card 1 */}
          <div className="card card1">
             <img 
-                src="/images/Projects/InkDevelopment/picture-a.png"
+                src="/images/Research/InkDevelopment/picture-a.png"
                 alt="img1"
                 className="card1-img1">
             </img>
             <img 
-                src="/images/Projects/InkDevelopment/picture-b.png"
+                src="/images/Research/InkDevelopment/picture-b.png"
                 alt="img2"
                 className="card1-img3">
             </img>
@@ -56,7 +56,7 @@ const InkDevelopment = () => {
         <div className="card">
           <video controls className="card-video">
             <source
-              src="/images/Projects/InkDevelopment/20201117_1.mp4"
+              src="/images/Research/InkDevelopment/20201117_1.mp4"
               type="video/mp4"
             />
           </video>

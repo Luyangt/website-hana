@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../../styles/Research/ResearchSubPage.css";
 import InkDevelopment from "./InkDevelopment";
+import ThreeDPrinting from "./intelligent-3D-printing";
 
 const ResearchSubPage = () => {
     const researchTopics = [
@@ -33,6 +34,12 @@ const ResearchSubPage = () => {
         <div className="research-main-content">
           <section className="research-section">
             <InkDevelopment />
+          </section>
+        </div>
+
+        <div className="research-main-content">
+          <section className="research-section">
+            <ThreeDPrinting />
           </section>
         </div>
       </div>
