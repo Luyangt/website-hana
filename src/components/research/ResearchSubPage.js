@@ -8,6 +8,8 @@ import ModularStimuli from "./Modular-Stimuli-Responsive-Valve";
 import PneumaticActuators from "./PneumaticActuators";
 import UnderactuatedTails from "./UnderactuatedTails";
 import Lattice from "./Lattice";
+import Thermodynamic from "./Thermodynamic";
+import IronBased from "./IronBased";
 
 const ResearchSubPage = () => {
     const researchTopics = [
@@ -18,6 +20,9 @@ const ResearchSubPage = () => {
       { title: "Pneumatic Actuators for Soft Robotics", link: "/research/PneumaticActuators" },
       { title: "Dynamics and Design of Underactuated Tails for Motion Stability", link: "/research/UnderactuatedTails" },
       { title: "Lattice Structures for Soft Robotics", link: "/research/Lattice" },
+      { title: "Thermodynamic Soft Robotics", link: "/research/Thermodynamic" },
+      { title: "Iron-Based Soft Robotics", link: "/research/IronBased" },
+      
     ];
 
     return (
@@ -67,6 +72,14 @@ const ResearchSubPage = () => {
 
           <section className="research-section">
             <Lattice />
+          </section>
+
+          <section className="research-section">
+            <Thermodynamic />
+          </section>
+
+          <section className="research-section">
+            <IronBased />
           </section>
 
       </div>
