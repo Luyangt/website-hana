@@ -7,6 +7,7 @@ import ElectronicsFree from "./ElectronicsFree-soft-robots";
 import ModularStimuli from "./Modular-Stimuli-Responsive-Valve";
 import PneumaticActuators from "./PneumaticActuators";
 import UnderactuatedTails from "./UnderactuatedTails";
+import Lattice from "./Lattice";
 
 const ResearchSubPage = () => {
     const researchTopics = [
@@ -15,7 +16,8 @@ const ResearchSubPage = () => {
       { title: "Electronics-Free Soft Robotics", link: "/research/ElectronicsFree-soft-robots" },
       { title: "Modular Stimuli-Responsive Valves for Pneumatic Soft Robots", link: "/research/Modular-Stimuli-Responsive-Valve" },
       { title: "Pneumatic Actuators for Soft Robotics", link: "/research/PneumaticActuators" },
-      { title: "Dynamics and Design of Underactuated Tails for Motion Stability", link: "/research/UnderactuatedTails" }
+      { title: "Dynamics and Design of Underactuated Tails for Motion Stability", link: "/research/UnderactuatedTails" },
+      { title: "Lattice Structures for Soft Robotics", link: "/research/Lattice" },
     ];
 
     return (
@@ -61,6 +63,10 @@ const ResearchSubPage = () => {
 
           <section className="research-section">
             <UnderactuatedTails />
+          </section>
+
+          <section className="research-section">
+            <Lattice />
           </section>
 
       </div>
