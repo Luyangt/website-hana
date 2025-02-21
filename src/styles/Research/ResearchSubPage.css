@@ -1,15 +1,53 @@
 /* Research Page Styling */
 .research-container {
-  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
-  padding: 20px;
-  font-family: "Arial", sans-serif;
+  box-sizing: border-box;
+}
+.research-header {
+  background-color: #273541;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  color: #fff; /* White text on dark background */
+  min-height: 300px; /* Ensures a tall banner */
+  width: 100%;
+  margin: 0;
 }
 
-.research-title {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  color: #333;
+.research-header-text {
+  flex: 0 0 auto;
+}
+
+.research-header-text h1 {
+  font-size: 5rem;
+  line-height: 4.5rem;
+  margin-bottom: 1rem;
+}
+
+.research-header-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+.research-header-image {
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 50%;
+  border: none;
+  outline: none;
+ 
+}
+
+.research-header-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: none;
 }
 
 /* Content Layout */
@@ -64,4 +102,30 @@
 
 .research-section {
   margin-bottom: 40px;
+}
+
+@media (max-width: 992px) {
+  .research-content-wrapper {
+    flex-direction: column;
+  }
+
+  .research-header {
+    padding: 2rem 1rem;
+  }
+
+  .research-header-text {
+    max-width: 100%;
+  }
+
+  .research-header-image {
+    max-width: 100%;
+  }
+
+  .research-topics-list {
+    margin-bottom: 20px;
+  }
+
+  .research-hero-image {
+    max-width: 100%;
+  }
 }

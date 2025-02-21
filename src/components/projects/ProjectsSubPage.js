@@ -36,20 +36,20 @@ const ProjectsSubPage = () => {
         <div className="project-content">
 
           <section id="Nanofabrication" className="project-section">
-            <Nanofabrication />\
+            <Nanofabrication />
           </section>
 
           <section id="grand-theft-autonomous" className="project-section">
             <GrandTheftAutonomous />
-          </section>\
+          </section>
 
           <section id="clothes-caring-machine" className="project-section">
             <ClothesCaringMachine />
-          </section>\
+          </section>
 
           <section id="bitcoin" className="project-section">
             <BitcoinExplore />
-          </section>\
+          </section>
         
         </div>
       </div>

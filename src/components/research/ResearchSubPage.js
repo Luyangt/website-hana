@@ -28,8 +28,19 @@ const ResearchSubPage = () => {
     return (
       <div className="research-container">
         <div className="research-header">
-          <h1 className="research-title">Research</h1>
-          <div className="research-content-wrapper">
+          <div className="research-header-text">
+            <h1 className="research-title">Research</h1>
+            <p>
+              Brief description of the research and its importance....
+            </p>
+          </div>
+          
+          <div className="research-header-image">
+              <img src="/images/Research/research-header-img.png" alt="Research Header Image" />
+          </div>
+        </div>
+
+        <div className="research-topics-link">
             <div className="research-topics-list">
               {researchTopics.map((topic, index) => (
                 <Link to={topic.link} key={index} className="research-topic-link">
@@ -37,10 +48,6 @@ const ResearchSubPage = () => {
                 </Link>
               ))}
             </div>
-            <div className="research-image-container">
-              <img src="/images/research-image.png" alt="Research Visualization" className="research-hero-image" />
-            </div>
-          </div>
         </div>
 
         <div className="research-main-content">

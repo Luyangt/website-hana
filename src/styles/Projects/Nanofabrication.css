@@ -1,39 +1,45 @@
 /* Overall container */
+.nano-overall-container {
+  width: 100%;
+  background-color: white;
+}
+
+/* Inner container */
 .nano-container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
-  background: #fdfdfd;
-  font-family: sans-serif;
+  background: transparent;
+  font-family: 'Nunito', sans-serif;
+  color: #333;
 }
 
-/* Hero / Header Section */
+/* Header Section */
 .nano-header-section {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   gap: 2rem;
-  align-items: flex-start;
   margin-bottom: 3rem;
 }
 
-/* The image on the left */
+/* Header Image */
 .nano-header-img {
-  width: 600px;
-  height: 700px;
+  max-width: 600px;
+  width: 100%;
+  height: auto;
   border-radius: 8px;
-  margin-top: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* The text on the right */
+/* Header Text */
 .nano-header-text {
   flex: 1;
-  max-width: 700px; 
+  font-size: 1rem;
+  line-height: 1.6;
 }
 
-/* Title section at the very top */
-.nano-title-section {
-  margin-bottom: 1rem;
-}
-
+/* Title Section */
 .nano-title-section h1 {
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
@@ -47,7 +53,7 @@
   letter-spacing: 1px;
 }
 
-/* Paragraphs, lists, etc. below the titles */
+/* Paragraphs and Lists below Titles */
 .nano-header-text p,
 .nano-header-text ul {
   line-height: 1.6;
@@ -56,28 +62,17 @@
   max-width: 800px;
 }
 
-/* Cards / Grid Section */
+/* Project Cards Section */
 .nano-project-cards {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto auto auto;
-  grid-template-areas:
-      "card4"  
-      "card2 card2" 
-      "card3 card3"
-      "card5 card5";
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
 }
 
-/* Assign each card to its named grid area */
-.nano-card2 { grid-area: card2; }
-.nano-card3 { grid-area: card3; }
-.nano-card4 { grid-area: card4; }
-.nano-card5 { grid-area: card5; }
-
+/* Card Styling */
 .nano-card {
   background: #fff;
-  border: 1px solid #ddd;
+  border: 1px solid #eee;
   border-radius: 8px;
   padding: 1rem;
   text-align: center;
@@ -85,8 +80,24 @@
 }
 
 .nano-card img {
-  width: 300px;
+  width: 100%;
   height: auto;
   border-radius: 4px;
   margin-bottom: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .nano-header-section {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .nano-header-text {
+    max-width: 100%;
+  }
+  
+  .nano-header-img {
+    margin-bottom: 1.5rem;
+  }
 }

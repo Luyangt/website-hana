@@ -1,20 +1,22 @@
 .header {
     display: flex;
     justify-content: space-between;
-    background-color: white;
+    background-color: #273541;
     align-items: center;
     padding: 40px; /* Add padding inside the header for breathing room */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow for better separation */
+    border-bottom: 1px solid #4d5f70; 
   }
   
   .header nav a, .header nav .link {
     margin: 0 15px;
     text-decoration: none;
-    color: #333; /* Dark gray for links */
+    color: whitesmoke; /* Dark gray for links */
     font-weight: bold;
+    font-size: 15px;
   }
 
   .header nav a:hover, .header nav .link:hover {
-    color: #ffb500; /* Change the color on hover */
+    color: #A8E6FF; /* Change the color on hover */
   }
   
