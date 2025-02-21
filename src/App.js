@@ -7,9 +7,9 @@ import ResearchSubPage from "./components/research/ResearchSubPage.js";
 import ProjectsSubPage from "./components/projects/ProjectsSubPage.js";
 import Activity from "./components/Activities/ActivitiesMainPage.js";
 import InkDevelopment from "./components/research/InkDevelopment.js";
-import ThreeDPrinting from "./components/research/intelligent-3D-printing.js";
-import ClothesCaringMachine from "./components/projects/clocle-multifunction-machine.js";
-import GrandTheftAutonomous from "./components/projects/grand-theft-autonomous.js";
+import ThreeDPrinting from "./components/research/Intelligent-3D-printing.js";
+import ClothesCaringMachine from "./components/projects/Clocle-multifunction-machine.js";
+import GrandTheftAutonomous from "./components/projects/Grand-theft-autonomous.js";
 
 const App = () => {
   return (
@@ -21,9 +21,9 @@ const App = () => {
         <Route path="/projects" element={<ProjectsSubPage />} />
         <Route path="/activities" element={<Activity />} />
         <Route path="/research/ink-3D-printing" element={<InkDevelopment />} />
-        <Route path="/research/intelligent-3D-printing" element={<ThreeDPrinting />} />
-        <Route path="/projects/clocle-multifunction-machine" element={<ClothesCaringMachine />} />
-        <Route path="/projects/grand-theft-autonomous" element={<GrandTheftAutonomous />} />
+        <Route path="/research/Intelligent-3D-printing" element={<ThreeDPrinting />} />
+        <Route path="/projects/Clocle-multifunction-machine" element={<ClothesCaringMachine />} />
+        <Route path="/projects/Grand-theft-autonomous" element={<GrandTheftAutonomous />} />
       </Routes>
       <Footer />
     </Router>

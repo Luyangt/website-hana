@@ -2,15 +2,14 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../../styles/Research/ResearchSubPage.css";
 import InkDevelopment from "./InkDevelopment";
-import ThreeDPrinting from "./intelligent-3D-printing";
+import ThreeDPrinting from "./Intelligent-3D-printing";
+import ElectronicsFree from "./ElectronicsFree-soft-robots";
 
 const ResearchSubPage = () => {
     const researchTopics = [
-      { title: "Development of Intelligent 3D Printing System", link: "/research/intelligent-3D-printing" },
-      { title: "Actuators and Control Systems Design for Soft Robotics", link: "/research/actuators-soft-robotics" },
-      { title: "Ink Development for Direct Ink Writing (DIW) 3D Printing", link: "/research/ink-3D-printing" },
-      { title: "Fabrication of Microscale Kirigami Skin", link: "/research/fabrication-skin" },
-      { title: "Thermodynamic and Kinetic Study of Austenite Phase Transformation", link: "/research/thermodynamic-transformation" },
+      { title: "Development of Intelligent 3D Printing System", link: "/research/Intelligent-3D-printing" },
+      { title: "Ink Development for Direct Ink Writing (DIW) 3D Printing", link: "/research/InkDevelopment" },
+      { title: "Electronics-Free Soft Robotics", link: "/research/ElectronicsFree-soft-robots" },
     ];
 
     return (
@@ -32,6 +31,14 @@ const ResearchSubPage = () => {
         </div>
 
         <div className="research-main-content">
+
+        <div className="research-main-content">
+          <section className="research-section">
+            <ElectronicsFree />
+          </section>
+        </div>
+
+
           <section className="research-section">
             <InkDevelopment />
           </section>

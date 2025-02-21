@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../../styles/Projects/ProjectsSubPage.css";
-import ClothesCaringMachine from "./clocle-multifunction-machine";
-import GrandTheftAutonomous from "./grand-theft-autonomous";
+import ClothesCaringMachine from "./Clocle-multifunction-machine.js";
+import GrandTheftAutonomous from "./Grand-theft-autonomous";
 import BitcoinExplore from "./BitcoinExplore";
 import Nanofabrication from "./Nanofabrication";
 
@@ -10,8 +10,8 @@ import Nanofabrication from "./Nanofabrication";
 const ProjectsSubPage = () => {
     const projectTopics = [
       { title: "The Diagnostics and Response Strategies for Malaria", link: "src/components/projects/diagnostics-response-malaria.js" },
-      { title: "\"Grand Theft Autonomous\" - Can-Grabbing Robot", link: "src/components/projects/grand-theft-autonomous.js" },
-      { title: "Cloclé Multifunction Clothes Caring Machine", link: "src/components/projects/clocle-multifunction-machine.js" },
+      { title: "\"Grand Theft Autonomous\" - Can-Grabbing Robot", link: "src/components/projects/Grand-theft-autonomous.js" },
+      { title: "Cloclé Multifunction Clothes Caring Machine", link: "src/components/projects/Clocle-multifunction-machine.js" },
     ];
 
     return (
