@@ -4,6 +4,7 @@ import "../../styles/Research/ResearchSubPage.css";
 import InkDevelopment from "./InkDevelopment";
 import ThreeDPrinting from "./Intelligent-3D-printing";
 import ElectronicsFree from "./ElectronicsFree-soft-robots";
+import ModularStimuli from "./Modular-Stimuli-Responsive-Valve";
 
 const ResearchSubPage = () => {
     const researchTopics = [
@@ -32,24 +33,26 @@ const ResearchSubPage = () => {
 
         <div className="research-main-content">
 
-        <div className="research-main-content">
           <section className="research-section">
             <ElectronicsFree />
           </section>
-        </div>
 
+          <section className="research-section">
+            <ModularStimuli />
+          </section>
+    
 
           <section className="research-section">
             <InkDevelopment />
           </section>
-        </div>
 
-        <div className="research-main-content">
+
           <section className="research-section">
             <ThreeDPrinting />
           </section>
-        </div>
+
       </div>
+    </div>
     );
 };
 
