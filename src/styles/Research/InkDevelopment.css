@@ -1,101 +1,112 @@
-
-/* Overall container */
+/* Overall Container */
 .ink-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem;
-    background: #fdfdfd;
-    font-family: sans-serif;
-  }
-  
-  /* Hero / Header Section */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #fdfdfd;
+  font-family: sans-serif;
+}
+
+/* Header Section */
+.ink-header-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Image Section */
+.ink-header-img {
+  flex: 1;
+  max-width: 40%;
+}
+.ink-header-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.ink-header-img h4 {
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  color: #666;
+}
+
+/* Text Section */
+.ink-header-text {
+  flex: 1;
+  max-width: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.ink-title-section {
+  margin-bottom: 1rem;
+}
+.ink-title-section h1 {
+  font-size: 2rem;
+  color: #333;
+  margin: 0;
+}
+.ink-header-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+/* Project Cards Section */
+.ink-project-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* Card Styling */
+.ink-project-cards .card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+/* Specific styling for card1 with two images */
+.card.card1 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.card1-img1,
+.card1-img3 {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+/* Video card styling */
+.card-video {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
   .ink-header-section {
-    display: flex;
     flex-direction: column;
-    gap: 2rem;                   /* space between image and text */ 
-    margin-bottom: 3rem;
+    align-items: center;
   }
-
-    /* The image on the left */
-  .ink-header-img.img {
-      display: block;
-      align-items: flex-start;
-      width: 1100px;  
-      height: auto;     
-      border-radius: 8px;
-      margin-top: 1rem auto; 
-    }
-
-    /* The text on the right */
-    .ink-header-text {
-      text-align: center;
-    }
   
-  /* Title section at the very top */
-  .ink-title-section {
-    margin-bottom: 1rem; /* space below h1 and h4 */
+  .ink-header-img,
+  .ink-header-text {
+    max-width: 100%;
   }
   
   .ink-title-section h1 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
-    line-height: 1.2;
+    font-size: 1.75rem;
   }
-  
-  .ink-title-section h4 {
-    font-size: 1rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-  }
-  
-  /* Paragraphs, lists, etc. below the titles */
-  .ink-header-text p {
-    line-height: 1.6;
-    font-size: 1.1rem;
-    margin-bottom: 1rem;
-  }
-  
- /* Cards / Grid Section */
-.ink-project-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
-  }
-  
-  .ink-project-cards.card {
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 1rem;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-  }
-  
-  /* For card1, arrange the two images side by side */
-  .ink-project-cards.card.card1 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* Optional: add gap if supported by your browsers */
-    gap: 1rem;
-  }
-  
-  .ink-project-cards.card.card1 img {
-    width: 48%;  /* Each image takes about half the card's width */
-    height: auto;
-    border-radius: 4px;
-  }
-  
-  /* Existing styling for videos and other elements remains unchanged */
-  .ink-project-cards.card-video {
-    width: 300px;
-    height: auto;
-    border-radius: 4px;
-    margin-bottom: 1rem;
-  }
-  
-  .ink-project-cards.card p {
-    font-size: 1.2rem;
-    line-height: 1.4;
-    color: #333;
-  }
+}

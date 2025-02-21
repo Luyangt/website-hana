@@ -5,12 +5,17 @@ import InkDevelopment from "./InkDevelopment";
 import ThreeDPrinting from "./Intelligent-3D-printing";
 import ElectronicsFree from "./ElectronicsFree-soft-robots";
 import ModularStimuli from "./Modular-Stimuli-Responsive-Valve";
+import PneumaticActuators from "./PneumaticActuators";
+import UnderactuatedTails from "./UnderactuatedTails";
 
 const ResearchSubPage = () => {
     const researchTopics = [
       { title: "Development of Intelligent 3D Printing System", link: "/research/Intelligent-3D-printing" },
       { title: "Ink Development for Direct Ink Writing (DIW) 3D Printing", link: "/research/InkDevelopment" },
       { title: "Electronics-Free Soft Robotics", link: "/research/ElectronicsFree-soft-robots" },
+      { title: "Modular Stimuli-Responsive Valves for Pneumatic Soft Robots", link: "/research/Modular-Stimuli-Responsive-Valve" },
+      { title: "Pneumatic Actuators for Soft Robotics", link: "/research/PneumaticActuators" },
+      { title: "Dynamics and Design of Underactuated Tails for Motion Stability", link: "/research/UnderactuatedTails" }
     ];
 
     return (
@@ -40,8 +45,11 @@ const ResearchSubPage = () => {
           <section className="research-section">
             <ModularStimuli />
           </section>
-    
 
+          <section className="research-section">
+            <PneumaticActuators />
+          </section>
+    
           <section className="research-section">
             <InkDevelopment />
           </section>
@@ -49,6 +57,10 @@ const ResearchSubPage = () => {
 
           <section className="research-section">
             <ThreeDPrinting />
+          </section>
+
+          <section className="research-section">
+            <UnderactuatedTails />
           </section>
 
       </div>

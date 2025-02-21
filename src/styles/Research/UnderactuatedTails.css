@@ -1,0 +1,64 @@
+/* Overall container */
+.ut-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Image section */
+  .ut-container-img {
+    flex: 1 1 40%;
+    max-width: 40%;
+    padding: 1rem;
+  }
+  
+  .ut-container-img img {
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+  
+  /* Content section */
+  .ut-container-content {
+    flex: 1 1 55%;
+    max-width: 55%;
+    padding: 1rem;
+  }
+  
+  .ut-container-content h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  /* Text styling */
+  .ut-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 1rem;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .ut-container {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .ut-container-img,
+    .ut-container-content {
+      max-width: 100%;
+    }
+    
+    .ut-container-content h1 {
+      font-size: 1.75rem;
+    }
+  }
