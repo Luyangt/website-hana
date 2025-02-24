@@ -12,7 +12,7 @@ const Footer = () => {
       </div>
 
       <div className="contact info">
-        <p>huayc@seas.upenn.edu</p>
+        <p>huayucong1996@gmail.com</p>
       </div>
       
       <a

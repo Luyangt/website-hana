@@ -1,7 +1,7 @@
 .header {
     display: flex;
     justify-content: space-between;
-    background-color: #273541;
+    background-color: white;
     align-items: center;
     padding: 40px; /* Add padding inside the header for breathing room */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow for better separation */
@@ -11,7 +11,7 @@
   .header nav a, .header nav .link {
     margin: 0 15px;
     text-decoration: none;
-    color: whitesmoke; /* Dark gray for links */
+    color: black; /* Dark gray for links */
     font-weight: bold;
     font-size: 15px;
   }

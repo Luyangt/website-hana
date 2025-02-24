@@ -1,58 +1,132 @@
 /* Research Page Styling */
-.project-page {
-    width: 100%;
-    margin: 0 auto;
-    padding: 20px;
-    font-family: "Arial", sans-serif;
-  }
-  
-  .project-page h1 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: #333;
-  }
-  
-  /* Content Layout */
-  .content {
-    display: flex;
-    gap: 30px; /* Space between the two sections */
-  }
-  
-  /* Left Section: Topics */
-  .topics {
-    flex: 1; /* Make it take 1 part of the layout */
-    display: flex;
+.project-container {
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.project-header {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  color: #fff; /* White text on dark background */
+  min-height: 300px; /* Ensures a tall banner */
+  width: 100%;
+  margin: 0;
+  gap: 3rem; /* Add space between text and image */
+}
+
+.project-header-text {
+  flex: 0 0 auto;
+}
+
+.project-header-text h1 {
+  font-size: 5rem;
+  line-height: 4.5rem;
+  margin-bottom: 1rem;
+}
+
+.project-header-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+.project-header-image {
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 50%;
+  border: none;
+  outline: none;
+ 
+}
+
+.project-header-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: none;
+}
+
+/* Content Layout */
+.project-content-wrapper {
+  display: flex;
+  gap: 30px;
+}
+
+/* Left Section: Topics */
+.project-topics-list {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.project-topic-link {
+  text-decoration: none;
+}
+
+.project-topic-item {
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  font-size: 1.2rem;
+  color: black;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.project-topic-item:hover {
+  background-color: #ffb500;
+  color: white;
+}
+
+/* Right Section: Image */
+.project-image-container {
+  flex: 2;
+  text-align: center;
+}
+
+.project-header-image {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Main Content Section */
+.project-main-content {
+  margin-top: 40px;
+}
+
+.project-section {
+  margin-bottom: 40px;
+}
+
+@media (max-width: 992px) {
+  .project-content-wrapper {
     flex-direction: column;
-    gap: 15px; /* Space between each topic */
   }
-  
-  .topic-link {
-    text-decoration: none;
+
+  .project-header {
+    padding: 2rem 1rem;
   }
-  
-  .topic-item {
-    padding: 10px 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-    font-size: 1.2rem;
-    color:black; 
-    transition: background-color 0.3s, color 0.3s;
-  }
-  
-  .topic-item:hover {
-    background-color: #ffb500; 
-    color: white; /* White text on hover */
-  }
-  
-  /* Right Section: Image */
-  .image {
-    flex: 2; /* Make it take 2 parts of the layout */
-    text-align: center;
-  }
-  
-  .image img {
+
+  .project-header-text {
     max-width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   }
+
+  .project-header-image {
+    max-width: 100%;
+  }
+
+  .project-topics-list {
+    margin-bottom: 20px;
+  }
+
+  .project-hero-image {
+    max-width: 100%;
+  }
+}

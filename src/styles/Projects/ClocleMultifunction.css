@@ -1,35 +1,51 @@
 /* Overall container */
+.clocle-overall-container {
+  width: 100%;
+  background-color: #ECECEC;
+}
+
+/* Inner container */
 .clocle-container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
-  background: #fdfdfd;
-  font-family: sans-serif;
+  background: transparent;
+  font-family: 'Nunito', sans-serif;
+  color: #333;
 }
 
-/* Hero / Header Section */
+/* Header Section */
 .clocle-header-section {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   gap: 2rem;
-  align-items: flex-start;
   margin-bottom: 3rem;
 }
 
-/* The image on the left */
+/* Header Image */
 .clocle-header-img {
-  width: 400px;
+  flex: 1; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clocle-header-img img {
+  max-width: 100%;
   height: auto;
   border-radius: 8px;
-  margin-top: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
-/* The text on the right */
+/* Header Text */
 .clocle-header-text {
   flex: 1;
-  max-width: 700px; 
+  font-size: 1rem;
+  line-height: 1.6;
 }
 
-/* Title section at the very top */
+/* Title Section */
 .clocle-title-section {
   margin-bottom: 1rem;
 }
@@ -40,20 +56,19 @@
   line-height: 1.2;
 }
 
-.clocle-title-section h4 {
-  color: #007bff;
-  font-size: 1rem;
+.clocle-title-section h2 {
   text-transform: uppercase;
   letter-spacing: 1px;
+  font-size: 0.9rem;
+  color: #888; /* Lighter color for subheading */
+  margin-bottom: 0.5rem;
 }
 
-/* Paragraphs, lists, etc. below the titles */
+/* Paragraphs, Lists, etc. below Titles */
 .clocle-header-text p,
 .clocle-header-text ul {
-  line-height: 1.6;
-  font-size: 1.1rem;
   margin-bottom: 1rem;
-  max-width: 800px;
+  max-width: 600px;
 }
 
 /* Cards / Grid Section */
@@ -63,9 +78,10 @@
   gap: 2rem;
 }
 
+/* Card Styling */
 .clocle-card {
   background: #fff;
-  border: 1px solid #ddd;
+  border: 1px solid #eee;
   border-radius: 8px;
   padding: 1rem;
   text-align: center;
@@ -73,7 +89,7 @@
 }
 
 .clocle-card img {
-  width: 300px;
+  width: 100%;
   height: auto;
   border-radius: 4px;
   margin-bottom: 1rem;
@@ -83,4 +99,20 @@
   font-size: 1.2rem;
   line-height: 1.4;
   color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .clocle-header-section {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .clocle-header-text {
+    max-width: 100%;
+  }
+  
+  .clocle-header-img {
+    margin-bottom: 1.5rem;
+  }
 }

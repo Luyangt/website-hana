@@ -36,7 +36,7 @@ const ResearchSubPage = () => {
           </div>
           
           <div className="research-header-image">
-              <img src="/images/Research/research-header-img.png" alt="Research Header Image" />
+              <img src="/images/Research/research-banner2.png" alt="Research Header Image" />
           </div>
         </div>
 
