@@ -58,6 +58,13 @@ const ClothesCaringMachine = () => {
             />
             <h3>Clothes Caring Machine Advertising image</h3>
           </div>
+          <div className="clocle-card">
+            <img
+              src="/images/Projects/Clothes Caring Machine/Picture1.png"
+              alt="Clothes Caring Machine Advertising image"
+            />
+            <h3>Clothes </h3>
+          </div>
         </div>
       </div>
     </div>
