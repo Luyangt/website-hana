@@ -14,50 +14,57 @@
   color: #333;
 }
 
-/* Header Section */
+/* Header Section (no more display: flex) */
 .nano-header-section {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 2rem;
   margin-bottom: 3rem;
 }
 
-/* Header Text */
-.nano-header-text {
-  flex: 1 1 auto;
-  font-size: 1rem;
-  line-height: 1.6;
-}
-
-/* Title Section */
-.nano-title-section h1 {
+/* Title at the top */
+.nano-title-section {
+  text-align: center;
   font-size: 2rem;
   font-weight: 700;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   line-height: 1.3;
 }
 
-
-/* Paragraphs and Lists below Titles */
-.nano-header-text p {
-  margin-bottom: 1rem;
-  width: 100%;
-}
-
-
-/* Header Image */
-.nano-header-image {
+/* Body text that contains paragraphs and images */
+.nano-body-text {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  position: relative; /* not strictly required, but can be useful */
 }
 
-.nano-header-image img {
-  width:auto;
-  height: 300px;
+/* Paragraph spacing */
+.nano-body-text p {
+  margin-bottom: 1rem;
+}
+
+/* Right-floated image (top-right) */
+.nano-img-right {
+  float: right;
+  width: 300px;             /* Adjust as needed */
+  margin: 0 0 1rem 1rem;    /* top=0, right=0, bottom=1rem, left=1rem */
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Left-floated image (bottom-left) */
+.nano-img-left {
+  float: left;
+  width: 300px;             /* Adjust as needed */
+  margin: 0 1rem 1rem 0;    /* top=0, right=1rem, bottom=1rem, left=0 */
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Clear floats at the end of .nano-body-text so container expands fully */
+.nano-body-text::after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
 

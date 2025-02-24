@@ -11,7 +11,7 @@
   justify-content: center;
   padding: 4rem 2rem;
   color: #fff; /* White text on dark background */
-  min-height: 300px; /* Ensures a tall banner */
+  min-height: 500px; /* Ensures a tall banner */
   width: 100%;
   margin: 0;
   gap: 3rem; /* Add space between text and image */
@@ -49,51 +49,79 @@
   height: auto;
   border-radius: 8px;
   box-shadow: none;
+} 
+
+
+/* Container for the entire section */
+.project-topics-link {
+  max-width: 1200px;
+  height: 550px; 
+  margin: 0 auto;
+  padding: 2rem ;
 }
 
-/* Content Layout */
-.project-content-wrapper {
-  display: flex;
-  gap: 30px;
+/* Section title */
+.project-topics-title {
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
-/* Left Section: Topics */
+/* Single row of cards */
 .project-topics-list {
-  flex: 1;
+  display: flex;         /* One row of cards */
+  gap: 2rem;             /* Space between cards */
+  justify-content: center; /* Center them horizontally (optional) */
+}
+
+/* Clickable link styles */
+.topic-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Card container */
+.topic-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden; /* ensures the top border & image corners are neat */
+  transition: transform 0.2s;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  height: 300px;
+  width: 300px;
 }
 
-.project-topic-link {
-  text-decoration: none;
+/* Hover effect */
+.topic-card:hover {
+  transform: scale(1.02);
 }
 
-.project-topic-item {
-  padding: 10px 20px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  background-color: #f9f9f9;
+/* Colored bar at the top of each card */
+.card-top-border {
+  height: 5px;
+  background-color: #007bff; /* Adjust color as needed */
+}
+
+/* Card image */
+.topic-card img {
+  width: 100%;
+  max-height: 200px; 
+  object-fit: cover;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+
+.topic-text h3 {
   font-size: 1.2rem;
-  color: black;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-.project-topic-item:hover {
-  background-color: #ffb500;
-  color: white;
-}
-
-/* Right Section: Image */
-.project-image-container {
-  flex: 2;
+  margin-bottom: 0.5rem;
+  color: #333;
   text-align: center;
-}
-
-.project-header-image {
-  max-width: 100%;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Main Content Section */

@@ -6,42 +6,64 @@ const Nanofabrication = () => {
     <div className="nano-overall-container">
       <div className="nano-container">
 
-        <div className="nano-header-section">
-          <div className="nano-header-text">
-            <div className="nano-title-section">
-              <h1> Nanofabrication & Nano characterization</h1>
-            </div>
-            <div className="nano-header-p">
+      <div className="nano-header-section">
+          {/* Title at the top */}
+          <h1 className="nano-title-section">Nanofabrication &amp; Nano characterization</h1>
+
+          {/* Body text and images below */}
+          <div className="nano-body-text">
+          <div className="nano-body-text-1">
+            <img
+                className="nano-img-right"
+                src="/images/Projects/Nano/header1.png"
+                alt="Design and fabrication of a MEMS system"
+              />
               <p>
-                In the <strong>Spring 2020 semester</strong>, I enrolled in the <strong>Nanofabrication & Nanocharacterization</strong> course taught by <strong>Dr. George Patrick Watson</strong>. 
-                This hands-on course provided practical experience with advanced nanofabrication 
-                and characterization techniques through four key experiments: 1. Microelectromechanical Systems (MEMS);
-                2. Directed Self-Assembly; 3. Quantum Dot Synthesis; 4. 2D Devices.
+                In the <strong>Spring 2020 semester</strong>, I enrolled in the <strong>Nanofabrication &amp; Nanocharacterization </strong> course taught by <strong>Dr. George Patrick Watson.</strong>
               </p>
+              {/* Image 1 (top-right) */}
+              
+              <p>
+              This hands-on course provided practical experience with advanced nanofabrication 
+              and characterization techniques through four key experiments:
+              </p>
+              
+              <p>
+              1. Microelectromechanical Systems (MEMS); 
+               2. Directed Self-Assembly; 3. Quantum Dot Synthesis; 4. 2D Devices.
+              </p>
+
+            
+
               <p>
                 Through these experiments, I gained knowledge in photolithography theory and methods, 
                 and had the opportunity to design and execute related processes. 
                 I also explored concepts related to <strong>directed self-assembly</strong> and <strong>quantum dots</strong>.
               </p>
+            </div>
+            <div className="nano-body-text-2">
+              {/* Image 2 */}
+              <img
+                className="nano-img-left"
+                src="/images/Projects/Nano/header2.png"
+                alt="Another view of MEMS design"
+              />
               <p>
                 Due to the pandemic, I was unable to conduct the experiment on 2D devices in person. 
-                However, Dr. Watson ingeniously structured the course to ensure we still acquired foundational knowledge in 2D device
-                technology. For my final project, I designed a <strong>graphene-based DNA detection chip</strong>.
+                However, Dr. Watson ingeniously structured the course to ensure we still acquired foundational 
+                knowledge in 2D device technology. For my final project, I designed a 
+                <strong> graphene-based DNA detection chip</strong>.
               </p>
               <p>
-                In subsequent research, I applied the skills learned to <strong>microscale molding</strong>, successfully scaling down common 
-                <strong>kirigami structures</strong> to the micrometer level. Additionally, in various experiments, 
-                I frequently utilized <strong>Physical Vapor Deposition (PVD)</strong> techniques to coat our samples with protective or 
+                In subsequent research, I applied the skills learned to <strong>microscale molding</strong>, 
+                successfully scaling down common <strong>kirigami structures</strong> to the micrometer level. 
+                Additionally, in various experiments, I frequently utilized 
+                <strong> Physical Vapor Deposition (PVD)</strong> techniques to coat our samples with protective or 
                 conductive metal layers.
               </p>
             </div>
-          </div>
-          <div className="nano-header-image">
-            <img 
-              src="/images/Projects/Nano/header.png"
-              alt="Design and fabrication of a MEMS system" 
-            />
-            <p>Figure 1: Design and fabrication of a <strong>MEMS system</strong></p>
+            
+            
           </div>
         </div>
 

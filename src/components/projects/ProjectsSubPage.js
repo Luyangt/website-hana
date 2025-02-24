@@ -6,44 +6,80 @@ import GrandTheftAutonomous from "./Grand-theft-autonomous";
 import BitcoinExplore from "./BitcoinExplore";
 import Nanofabrication from "./Nanofabrication";
 
-
 const ProjectsSubPage = () => {
-    const projectTopics = [
-      { title: "\"Grand Theft Autonomous\" - Can-Grabbing Robot", link: "src/components/projects/Grand-theft-autonomous.js" },
-      { title: "Data analysis: Bitcoin", link: "src/components/projects/BitcoinExplore.js" },
-      { title: "Cloclé Multifunction Clothes Caring Machine", link: "src/components/projects/Clocle-multifunction-machine.js" },
-      { title: "Nanofabrication", link: "src/components/projects/Nanofabrication.js"}
-    ];
-
-    return (
-      <div className="project-container">
-        <div className="project-header">
-          <div className="project-header-text">
-            <h1 className="project-title">Project</h1>
-            <p>
-              Brief description of the project and its importance....
-            </p>
-          </div>
-
-          <div className="project-header-image">
-              <img src="/images/Projects/banner.png" alt="Project Header Image" />
-          </div>
+  return (
+    <div className="project-container">
+      <div className="project-header">
+        <div className="project-header-text">
+          <h1 className="project-title">Project</h1>
+          <p>Brief description of the project and its importance....</p>
         </div>
-          
-      <div className="project-topics-link">
-        <div className="project-topics-list">
-            {projectTopics.map((topic, index) => (
-                <Link to={topic.link} key={index} className="topic-link">
-                  <div className="topic-item">{topic.title}</div>
-                </Link>
-            ))}
+        <div className="project-header-image">
+          <img src="/images/Projects/banner.png" alt="Project Header Image" />
         </div>
       </div>
-            
 
-       {/* Project Sections */}
+      <div className="project-topics-link">
+        <h2 className="project-topics-title">PROJECT OVERVIEW</h2>
+
+        {/* Single row of 4 cards */}
+        <div className="project-topics-list">
+          <Link to="#grand-theft-autonomous" className="topic-link">
+            <div className="topic-card">
+              <div className="card-top-border"></div>
+              <img 
+                src="/images/Projects/Grand Theft Autonomous/header.png" 
+                alt="Grand Theft Autonomous" 
+              />
+              <div className="topic-text">
+                <h3>Grand Theft Autonomous - Can-Grabbing Robot</h3>
+              </div>
+            </div>
+          </Link>
+
+          <Link to="#clothes-caring-machine" className="topic-link">
+            <div className="topic-card">
+              <div className="card-top-border"></div>
+              <img 
+                src="/images/Projects/Clothes Caring Machine/Picture2.png" 
+                alt="Cloclé Multifunction Clothes Caring Machine" 
+              />
+              <div className="topic-text">
+                <h3>Cloclé Multifunction Clothes Caring Machine</h3>
+              </div>
+            </div>
+          </Link>
+
+          <Link to="#bitcoin" className="topic-link">
+            <div className="topic-card">
+              <div className="card-top-border"></div>
+              <img 
+                src="/images/Projects/Bitcoin/for-link.png" 
+                alt="Data Analysis: Bitcoin" 
+              />
+              <div className="topic-text">
+                <h3>Data Analysis: Bitcoin</h3>
+              </div>
+            </div>
+          </Link>
+
+          <Link to="#Nanofabrication" className="topic-link">
+            <div className="topic-card">
+              <div className="card-top-border"></div>
+              <img 
+                src="/images/Projects/Nano/header2.png" 
+                alt="Nanofabrication" 
+              />
+              <div className="topic-text">
+                <h3>Nanofabrication</h3>
+              </div>
+            </div>
+          </Link>
+        </div>
+      </div>
+
+      {/* Project Sections */}
       <div className="project-main-content">
-
         <section id="grand-theft-autonomous" className="project-section">
           <GrandTheftAutonomous />
         </section>
@@ -61,7 +97,7 @@ const ProjectsSubPage = () => {
         </section>
       </div>
     </div>
-    );
-  };
-  
+  );
+};
+
 export default ProjectsSubPage;
