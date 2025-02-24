@@ -23,9 +23,9 @@
   margin-bottom: 3rem;
 }
 
-/* Text on the left */
+/* Text on the right */
 .gta-header-text {
-  flex: 1;
+  flex: 1 1 auto;
   font-size: 1rem;
   line-height: 1.6;
 }
@@ -50,7 +50,7 @@
 .gta-header-text p,
 .gta-header-text ul {
   margin-bottom: 1rem;
-  max-width: 600px;
+  width: 100%;
 }
 
 /* Image on the right */
@@ -59,10 +59,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
 .gta-header-image img {
-  max-width: 100%;
+  width:650px;
   height: auto;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
@@ -70,9 +71,11 @@
 
 /* Cards / Grid Section */
 .gta-project-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
+  display: flex;
+  justify-content: center;/* Centers the cards horizontally */
+  align-items: center;
+  gap: 3rem;
+
 }
 
 .gta-card {
@@ -82,12 +85,24 @@
   padding: 1rem;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  max-width: 600px;
 }
 
-.gta-card-video {
-  width: 100%; /* Let the video scale within the card */
-  height: auto;
+.gta-card #video1 {
+  width: auto; 
+  height: 300px;
   border-radius: 4px;
+  margin-bottom: 1rem;
+}
+.gta-card #video2 {
+  width:  auto; 
+  height: 300px;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+
+.gta-card-p {
   margin-bottom: 1rem;
 }
 

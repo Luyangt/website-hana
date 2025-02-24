@@ -47,28 +47,21 @@ const Nanofabrication = () => {
 
         {/* Cards / Grid Section */}
         <div className="nano-project-cards">
-          <div className="nano-card nano-card2">
+          <div className="nano-card nano-card1">
             <img
               src="/images/Projects/Nano/Picture2.png"
               alt="Microstructure design and fabrication for inducing material self-assembly"
             />
           </div>
 
-          <div className="nano-card nano-card3">
+          <div className="nano-card nano-card2">
             <img 
               src="/images/Projects/Nano/Picture3.png" 
               alt="Fluorescent quantum dots of different sizes produced by varying reaction times"
             />
           </div>
 
-          <div className="nano-card nano-card4">
-            <img
-              src="/images/Projects/Nano/Picture4.png"
-              alt="Example of a 2D sensor design—a graphene-based DNA detection chip" 
-            />
-          </div>
-
-          <div className="nano-card nano-card5">
+          <div className="nano-card nano-card3">
             <img
               src="/images/Projects/Nano/Picture5.png"
               alt="Mold used for fabricating microscale kirigami structures" 

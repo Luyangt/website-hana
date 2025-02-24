@@ -36,48 +36,42 @@ const BitcoinExplore = () => {
                 the upward trend aligned with our predictions.
               </p>
           </div>
+          <div className="bitcoin-header-image">
+            <img 
+              src="/images/Projects/Bitcoin/header-picture.png" 
+              alt="Clothes Caring Machine"
+            />
+            <p className="bitcoin-header-p1">Time series model prediction of Bitcoin price trends and the conclusion</p>
+            <p className="bitcoin-header-p2">
+            In the long run, we are confident towards crytocurrencies and predict that the prices of Bitcoin and 
+            Ethereum will continue to rise. And we are expected to see the prices of both double again within 2 years. 
+            However, the price increases of these two crytocurrencies are based on different logic. 
+            The value of Bitcoin is based on its scarcity, and the value of Ethereum is based on its technicality.
+            If Ethereum could produce revolutionary applications, its price may even be comparable to Bitcoin.
+            </p>
+          </div>
         </div>
 
         {/* Cards / Grid Section */}
         <div className="bitcoin-project-cards">
           {/* Card 1 */}
-          <div className="bitcoin-card bitcoin-card1">
+          <div className="bitcoin-card bitcoin-card">
             <img
               src="/images/Projects/Bitcoin/Picture1.png"
-              alt="Bitcoin trading volume data from major countries" 
+              alt="Relationship between key U.S. economic indicators and Bitcoin prices" 
             />
+            <p class="bitcoin-card bitcoin-card1-p">
+            Relationship between key U.S. <br /> economic indicators and Bitcoin prices</p>
           </div>
 
           {/* Card 2 */}
-          <div className="bitcoin-card bitcoin-card2">
+          <div className="bitcoin-card bitcoin-card">
             <img
               src="/images/Projects/Bitcoin/Picture2.png"
-              alt="Relationship between key U.S. economic indicators and Bitcoin prices"
+              alt="Correlation between Bitcoin prices and other assets like gold and Ethereum (ETH)"
             />
-          </div>
-
-          {/* Card 3 */}
-          <div className="bitcoin-card bitcoin-card3">
-            <img 
-              src="/images/Projects/Bitcoin/最长的照片.png" 
-              alt="Reddit platform comments related to Bitcoin"
-            />
-          </div>
-
-          {/* Card 4 */}
-          <div className="bitcoin-card bitcoin-card4">
-            <img
-              src="/images/Projects/Bitcoin/Picture3.png"
-              alt="Correlation between Bitcoin prices and other assets like gold and Ethereum (ETH)" 
-            />
-          </div>
-
-          {/* Card 5 */}
-          <div className="bitcoin-card bitcoin-card5">
-            <img
-              src="/images/Projects/Bitcoin/Picture5.png"
-              alt="Time series model prediction of Bitcoin price trends and the conclusion" 
-            />
+            <p className="bitcoin-card bitcoin-card2-p">Correlation between Bitcoin prices<br /> 
+              and other assets like gold and Ethereum (ETH)</p>
           </div>
         </div>
       </div>

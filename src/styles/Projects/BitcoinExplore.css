@@ -17,9 +17,10 @@
   /* Hero / Header Section */
   .bitcoin-header-section {
     display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    gap: 2rem;
+    flex-direction: column;
+    align-items: center;       /* Vertically center content */
+    justify-content: space-between;
+    gap: 4rem;
     margin-bottom: 3rem;
   }
   
@@ -30,10 +31,6 @@
     line-height: 1.6;
   }
   
-  /* Title Section */
-  .bitcoin-title-section {
-    margin-bottom: 1rem;
-  }
   
   .bitcoin-title-section h1 {
     text-align: center;
@@ -56,52 +53,72 @@
   .bitcoin-header-section p,
   .bitcoin-header-section ul {
     margin-bottom: 1rem;
-    /* Optionally remove max-width so content expands fully */
-    /* max-width: 600px; */
     width: 100%;
   }
+
+  /* Image under the text */
+.bitcoin-header-image { 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 900px;
+  height: auto;;
+}
+
+.bitcoin-header-image img {
+  width:100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+.bitcoin-header-image p {
+  text-align: center;
+}
   
   /* Cards / Grid Section (unchanged) */
   .bitcoin-project-cards {
-    display: grid;
-    /* 2 columns, 3 rows total */
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto auto;
-    grid-template-areas:
-      "bitcoin-card1 bitcoin-card2"  /* row 1: card1, card2 */
-      "bitcoin-card3 bitcoin-card3"  /* row 2: card3 occupies full width */
-      "bitcoin-card4 bitcoin-card5"; /* row 3: card4, card5 */
-    gap: 2rem;
+    display: flex;
+    justify-content: center;/* Centers the cards horizontally */
+    align-items: center;
+    gap: 3rem;
   }
   
-  .bitcoin-card1 {
-    grid-area: bitcoin-card1;
-  }
-  .bitcoin-card2 {
-    grid-area: bitcoin-card2;
-  }
-  .bitcoin-card3 {
-    grid-area: bitcoin-card3;
-  }
-  .bitcoin-card4 {
-    grid-area: bitcoin-card4;
-  }
-  .bitcoin-card5 {
-    grid-area: bitcoin-card5;
-  }
   
   .bitcoin-card {
     background: #fff;
-    border: 1px solid #ddd;
+    border: 1px solid #eee;
     border-radius: 8px;
     padding: 1rem;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    max-width: 600px;
   }
     
   .bitcoin-card img {
-    width: 300px;
+    width: 500px;
     height: auto;
     border-radius: 4px;
     margin-bottom: 1rem;
+  }
+  .bitcoin-card-p {
+    margin-bottom: 1rem;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+  }
+
+  @media (max-width: 992px) {
+    .bitcoin-header-section {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .bitcoin-header-text {
+      max-width: 100%;
+    }
+  
+    .bitcoin-header-image {
+      margin-top: 1.5rem;
+    }
   }

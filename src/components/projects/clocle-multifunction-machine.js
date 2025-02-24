@@ -50,13 +50,6 @@ const ClothesCaringMachine = () => {
 
         {/* Cards / Grid Section */}
         <div className="clocle-project-cards">
-          <div className="clocle-card">
-            <img
-              src="/images/Projects/Clothes Caring Machine/Picture1.png"
-              alt="I'm designing the clothes caring machine model" 
-            />
-            <h3>I'm designing the clothes caring machine model</h3>
-          </div>
 
           <div className="clocle-card">
             <img

@@ -28,7 +28,7 @@ const GrandTheftAutonomous = () => {
           </div>
           <div className="gta-header-image">
             <img 
-              src="/images/Projects/Grand Theft Autonomous/Picture1.png" 
+              src="/images/Projects/Grand Theft Autonomous/header.png" 
               alt="Grand Theft Autonomous"
               className="gta-header-img"
             />
@@ -38,20 +38,22 @@ const GrandTheftAutonomous = () => {
         {/* Project Cards Section */}
         <div className="gta-project-cards">
           <div className="gta-card">
-            <video key="video1" controls className="gta-card-video">
+            <video id="video1" controls className="gta-card-video">
               <source
-                src="/images/Projects/Grand Theft Autonomous/IMG_7127_575BE7AA-FB41-43A7-8E8B-6041E31DBE30.mp4"
+                src="/images/Projects/Grand Theft Autonomous/GTA1.mp4"
                 type="video/mp4"
               />
             </video>
+            <p className="gta-card-p">Video 1: Autonomous wall-following function demonstration</p>
           </div>
           <div className="gta-card">
-            <video controls className="gta-card-video">
+            <video id="video2" controls className="gta-card-video">
               <source
-                src="/images/Projects/Grand Theft Autonomous/1320.mp4"
+                src="/images/Projects/Grand Theft Autonomous/GTA2.mp4"
                 type="video/mp4"
               />
             </video>
+            <p className="gta-card-p">Video 2: Target detection function demonstration</p>
           </div>
         </div>
 
