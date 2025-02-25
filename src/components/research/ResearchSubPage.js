@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { HashLink as Link } from 'react-router-hash-link';
 import "../../styles/Research/ResearchSubPage.css";
 import InkDevelopment from "./InkDevelopment";
 import ThreeDPrinting from "./Intelligent-3D-printing";
@@ -12,19 +12,6 @@ import Thermodynamic from "./Thermodynamic";
 import IronBased from "./IronBased";
 
 const ResearchSubPage = () => {
-    const researchTopics = [
-      { title: "Development of Intelligent 3D Printing System", link: "/research/Intelligent-3D-printing" },
-      { title: "Ink Development for Direct Ink Writing (DIW) 3D Printing", link: "/research/InkDevelopment" },
-      { title: "Electronics-Free Soft Robotics", link: "/research/ElectronicsFree-soft-robots" },
-      { title: "Modular Stimuli-Responsive Valves for Pneumatic Soft Robots", link: "/research/Modular-Stimuli-Responsive-Valve" },
-      { title: "Pneumatic Actuators for Soft Robotics", link: "/research/PneumaticActuators" },
-      { title: "Dynamics and Design of Underactuated Tails for Motion Stability", link: "/research/UnderactuatedTails" },
-      { title: "Lattice Structures for Soft Robotics", link: "/research/Lattice" },
-      { title: "Thermodynamic Soft Robotics", link: "/research/Thermodynamic" },
-      { title: "Iron-Based Soft Robotics", link: "/research/IronBased" },
-      
-    ];
-
     return (
       <div className="research-container">
         <div className="research-header">
@@ -40,15 +27,90 @@ const ResearchSubPage = () => {
           </div>
         </div>
 
-        <div className="research-topics-link">
-            <div className="research-topics-list">
-              {researchTopics.map((topic, index) => (
-                <Link to={topic.link} key={index} className="research-topic-link">
-                  <div className="research-topic-item">{topic.title}</div>
-                </Link>
-              ))}
-            </div>
+        {/* Research Topics Link Section */}
+      <div className="research-topics-link">
+        <h2 className="research-topics-title">RESEARCH OVERVIEW</h2>
+        <div className="research-topics-list">
+          {/* First Row: 4 Cards */}
+          <div className="topic-row">
+            <Link smooth to="/research/Intelligent-3D-printing" className="research-topic-link">
+              <div className="research-topic-item">
+                <div className="card-top-border"></div>
+                <div className="topic-text">
+                  <h3>Development of Intelligent 3D Printing System</h3>
+                </div>
+              </div>
+            </Link>
+            <Link smooth to="/research/InkDevelopment" className="research-topic-link">
+              <div className="research-topic-item">
+                <div className="card-top-border"></div>
+                <div className="topic-text">
+                  <h3>Ink Development for Direct Ink Writing (DIW) 3D Printing</h3>
+                </div>
+              </div>
+            </Link>
+            <Link smooth to="/research/ElectronicsFree-soft-robots" className="research-topic-link">
+              <div className="research-topic-item">
+                <div className="card-top-border"></div>
+                <div className="topic-text">
+                  <h3>Electronics-Free Soft Robotics</h3>
+                </div>
+              </div>
+            </Link>
+            <Link smooth to="/research/Modular-Stimuli-Responsive-Valve" className="research-topic-link">
+              <div className="research-topic-item">
+                <div className="card-top-border"></div>
+                <div className="topic-text">
+                  <h3>Modular Stimuli-Responsive Valves for Pneumatic Soft Robots</h3>
+                </div>
+              </div>
+            </Link>
+          </div>
+          {/* Second Row: 5 Cards */}
+          <div className="topic-row">
+            <Link smooth to="/research/PneumaticActuators" className="research-topic-link">
+              <div className="research-topic-item">
+                <div className="card-top-border"></div>
+                <div className="topic-text">
+                  <h3>Pneumatic Actuators for Soft Robotics</h3>
+                </div>
+              </div>
+            </Link>
+            <Link smooth to="/research/UnderactuatedTails" className="research-topic-link">
+              <div className="research-topic-item">
+                <div className="card-top-border"></div>
+                <div className="topic-text">
+                  <h3>Dynamics and Design of Underactuated Tails for Motion Stability</h3>
+                </div>
+              </div>
+            </Link>
+            <Link smooth to="/research/Lattice" className="research-topic-link">
+              <div className="research-topic-item">
+                <div className="card-top-border"></div>
+                <div className="topic-text">
+                  <h3>Lattice Structures for Soft Robotics</h3>
+                </div>
+              </div>
+            </Link>
+            <Link smooth to="/research/Thermodynamic" className="research-topic-link">
+              <div className="research-topic-item">
+                <div className="card-top-border"></div>
+                <div className="topic-text">
+                  <h3>Thermodynamic Soft Robotics</h3>
+                </div>
+              </div>
+            </Link>
+            <Link smooth to="/research/IronBased" className="research-topic-link">
+              <div className="research-topic-item">
+                <div className="card-top-border"></div>
+                <div className="topic-text">
+                  <h3>Iron-Based Soft Robotics</h3>
+                </div>
+              </div>
+            </Link>
+          </div>
         </div>
+      </div>
 
         <div className="research-main-content">
 

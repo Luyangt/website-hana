@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { HashLink as Link } from 'react-router-hash-link';
 import "../../styles/Projects/ProjectsSubPage.css";
 import ClothesCaringMachine from "./Clocle-multifunction-machine.js";
 import GrandTheftAutonomous from "./Grand-theft-autonomous";
@@ -24,7 +24,7 @@ const ProjectsSubPage = () => {
 
         {/* Single row of 4 cards */}
         <div className="project-topics-list">
-          <Link to="#grand-theft-autonomous" className="topic-link">
+          <Link smooth to="#grand-theft-autonomous" className="topic-link">
             <div className="topic-card">
               <div className="card-top-border"></div>
               <img 
@@ -37,7 +37,7 @@ const ProjectsSubPage = () => {
             </div>
           </Link>
 
-          <Link to="#clothes-caring-machine" className="topic-link">
+          <Link smooth to="#clothes-caring-machine" className="topic-link">
             <div className="topic-card">
               <div className="card-top-border"></div>
               <img 
@@ -50,7 +50,7 @@ const ProjectsSubPage = () => {
             </div>
           </Link>
 
-          <Link to="#bitcoin" className="topic-link">
+          <Link smooth to="#bitcoin" className="topic-link">
             <div className="topic-card">
               <div className="card-top-border"></div>
               <img 
@@ -63,7 +63,7 @@ const ProjectsSubPage = () => {
             </div>
           </Link>
 
-          <Link to="#Nanofabrication" className="topic-link">
+          <Link smooth to="#Nanofabrication" className="topic-link">
             <div className="topic-card">
               <div className="card-top-border"></div>
               <img 
