@@ -55,9 +55,10 @@
 /* Research Topics Link Section */
 .research-topics-link {
   max-width: 1200px;
-  height: 550px; 
+  height: 900px; 
   margin: 0 auto;
   padding: 2rem ;
+
 }
 
 .research-topics-title {
@@ -73,14 +74,21 @@
 .research-topics-list {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 6rem;
+  justify-content: center;
 }
 
 /* Each row of cards */
 .topic-row {
   display: flex;
-  gap: 2rem;
   justify-content: center;
+}
+
+#topic-row-1 {
+  gap: 3rem;
+}
+#topic-row-2 {
+  gap: 2rem;
 }
 
 /* Research Topic Link */
@@ -93,11 +101,14 @@
 .research-topic-item {
   background: #fff;
   border-radius: 8px;
-  padding: 1rem;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden; 
   transition: transform 0.2s;
-  width: 250px;  /* Adjust card width as needed */
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 260px;
+  width: 260px;
+
 }
 
 .research-topic-item:hover {
@@ -106,15 +117,24 @@
 
 /* Card Top Border */
 .card-top-border {
+  flex: 0 0 auto;
   height: 5px;
   background-color: #007bff;  /* Adjust color as needed */
-  margin-bottom: 0.5rem;
 }
 
-/* Topic Text */
-.topic-text h3 {
-  font-size: 1.2rem;
-  margin: 0;
+
+.research-topic-item .topic-text h3 {
+  text-align: center!important;
+  font-size: 1rem; 
+  margin-top: 1rem;
+  line-height: 1.2;
+}
+
+.research-topic-item img {
+  max-width: auto;
+  height: 180px;
+  border-radius: 8px;
+  box-shadow: none;
 }
 
 

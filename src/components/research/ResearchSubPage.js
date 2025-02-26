@@ -32,38 +32,50 @@ const ResearchSubPage = () => {
         <h2 className="research-topics-title">RESEARCH OVERVIEW</h2>
         <div className="research-topics-list">
           {/* First Row: 4 Cards */}
-          <div className="topic-row">
-            <Link smooth to="/research/Intelligent-3D-printing" className="research-topic-link">
+          <div className="topic-row" id="topic-row-1">
+            <Link smooth to="#Intelligent-3D-printing" className="research-topic-link">
               <div className="research-topic-item">
                 <div className="card-top-border"></div>
                 <img 
-                 src="/images/Projects/Grand Theft Autonomous/header.png" 
+                 src="/images/Research/3D Printing/header.png" 
                  alt="Grand Theft Autonomous" 
                 />
                 <div className="topic-text">
-                  <h3>Development of Intelligent 3D Printing System</h3>
+                  <h3>Intelligent 3D Printing System</h3>
                 </div>
               </div>
             </Link>
-            <Link smooth to="/research/InkDevelopment" className="research-topic-link">
+            <Link smooth to="#InkDevelopment" className="research-topic-link">
               <div className="research-topic-item">
                 <div className="card-top-border"></div>
+                <img 
+                 src="images/Research/InkDevelopment/Picture1.png" 
+                 alt="Ink Development for Direct Ink Writing (DIW) 3D Printing" 
+                />
                 <div className="topic-text">
-                  <h3>Ink Development for Direct Ink Writing (DIW) 3D Printing</h3>
+                  <h3>Ink Development for Direct Ink Writing 3D Printing</h3>
                 </div>
               </div>
             </Link>
-            <Link smooth to="/research/ElectronicsFree-soft-robots" className="research-topic-link">
+            <Link smooth to="#ElectronicsFree-soft-robots" className="research-topic-link">
               <div className="research-topic-item">
                 <div className="card-top-border"></div>
+                <img 
+                 src="/images/Research/ElectronicsFree-soft-robots/header.png" 
+                 alt="ElectronicsFree-soft-robots" 
+                />
                 <div className="topic-text">
                   <h3>Electronics-Free Soft Robotics</h3>
                 </div>
               </div>
             </Link>
-            <Link smooth to="/research/Modular-Stimuli-Responsive-Valve" className="research-topic-link">
+            <Link smooth to="#Modular-Stimuli-Responsive-Valve" className="research-topic-link">
               <div className="research-topic-item">
                 <div className="card-top-border"></div>
+                <img 
+                 src="/images/Research/Modular-Stimuli-Responsive-Valve/link.png" 
+                 alt="Modular Stimuli-Responsive Valves for Pneumatic Soft Robots" 
+                />
                 <div className="topic-text">
                   <h3>Modular Stimuli-Responsive Valves for Pneumatic Soft Robots</h3>
                 </div>
@@ -71,44 +83,64 @@ const ResearchSubPage = () => {
             </Link>
           </div>
           {/* Second Row: 5 Cards */}
-          <div className="topic-row">
-            <Link smooth to="/research/PneumaticActuators" className="research-topic-link">
+          <div className="topic-row" id="topic-row-2">
+            <Link smooth to="#PneumaticActuators" className="research-topic-link">
               <div className="research-topic-item">
                 <div className="card-top-border"></div>
+                <img 
+                 src="/images/Research/PneumaticActuators/header.png" 
+                 alt="Pneumatic Actuators for Soft Robotics" 
+                />
                 <div className="topic-text">
-                  <h3>Pneumatic Actuators for Soft Robotics</h3>
+                  <h3>Modular Pneumatic Actuators</h3>
                 </div>
               </div>
             </Link>
-            <Link smooth to="/research/UnderactuatedTails" className="research-topic-link">
+            <Link smooth to="#UnderactuatedTails" className="research-topic-link">
               <div className="research-topic-item">
                 <div className="card-top-border"></div>
+                <img 
+                 src="/images/Research/UnderactuatedTails/link.png" 
+                 alt="Dynamics and Design of Underactuated Tails for Motion Stability" 
+                />
                 <div className="topic-text">
-                  <h3>Dynamics and Design of Underactuated Tails for Motion Stability</h3>
+                  <h3>Underactuated Tails </h3>
                 </div>
               </div>
             </Link>
-            <Link smooth to="/research/Lattice" className="research-topic-link">
+            <Link smooth to="#Lattice" className="research-topic-link">
               <div className="research-topic-item">
                 <div className="card-top-border"></div>
+                <img 
+                 src="/images/Research/Lattice/link.png" 
+                 alt="Lattice Structures for Soft Robotics" 
+                />
                 <div className="topic-text">
-                  <h3>Lattice Structures for Soft Robotics</h3>
+                  <h3>Pneumatic Smart Lattice</h3>
                 </div>
               </div>
             </Link>
-            <Link smooth to="/research/Thermodynamic" className="research-topic-link">
+            <Link smooth to="#Thermodynamic" className="research-topic-link">
               <div className="research-topic-item">
                 <div className="card-top-border"></div>
+                <img 
+                 src="/images/Research/Thermodynamic/header.png" 
+                 alt="Thermodynamic Soft Robotics" 
+                />
                 <div className="topic-text">
-                  <h3>Thermodynamic Soft Robotics</h3>
+                  <h3>Thermodynamic of Steel</h3>
                 </div>
               </div>
             </Link>
-            <Link smooth to="/research/IronBased" className="research-topic-link">
+            <Link smooth to="#IronBased" className="research-topic-link">
               <div className="research-topic-item">
                 <div className="card-top-border"></div>
+                <img 
+                 src="/images/Research/IronBased/header.png" 
+                 alt="Thermodynamic Soft Robotics" 
+                />
                 <div className="topic-text">
-                  <h3>Iron-Based Soft Robotics</h3>
+                  <h3>Electrodeposition of Steel</h3>
                 </div>
               </div>
             </Link>
@@ -118,42 +150,39 @@ const ResearchSubPage = () => {
 
         <div className="research-main-content">
 
-          <section className="research-section">
+          <section id="ElectronicsFree-soft-robots" className="research-section">
             <ElectronicsFree />
           </section>
 
-          <section className="research-section">
+          <section id="Modular-Stimuli-Responsive-Valve" className="research-section">
             <ModularStimuli />
           </section>
 
-          <section className="research-section">
+          <section id="PneumaticActuators" className="research-section">
             <PneumaticActuators />
           </section>
 
-          <section className="research-section">
+          <section id="Lattice" className="research-section">
             <Lattice />
           </section>
     
-          <section className="research-section">
+          <section id="InkDevelopment" className="research-section">
             <InkDevelopment />
           </section>
 
-
-          <section className="research-section">
+          <section id="Intelligent-3D-printing" className="research-section">
             <ThreeDPrinting />
           </section>
 
-          <section className="research-section">
+          <section id="UnderactuatedTails" className="research-section">
             <UnderactuatedTails />
           </section>
 
-          
-
-          <section className="research-section">
+          <section id="Thermodynamic" className="research-section">
             <Thermodynamic />
           </section>
 
-          <section className="research-section">
+          <section id="IronBased" className="research-section">
             <IronBased />
           </section>
 
