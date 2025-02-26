@@ -15,6 +15,7 @@
 
 .msrv-header-section {
   margin-bottom: 3rem;
+  
 }
 
   /* Title Section - at the very top */
@@ -31,6 +32,7 @@
   flex-direction: row;
   align-items: flex-start;
   gap: 2rem;
+  margin-top: 3rem;
 }
 
 /* Header Text */
@@ -65,23 +67,23 @@
     display: flex;
     justify-content: center;/* Centers the cards horizontally */
     align-items: center;
-    gap: 3rem;
+    gap: 5rem;
+    max-width: 1200px;
+    margin-top: 4rem;
   
   }
   
   .msrv-card {
     background: transparent;
-    border: 1px solid #eee;
-    border-radius: 8px;
     padding: 1rem;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-    max-width: 600px;
+    max-width: 1000px;
+    
   }
   
   .msrv-card img {
-    width: auto; 
-    height: 400px;
+    width: 100%; 
+    height: auto;
     border-radius: 4px;
     margin-bottom: 1rem;
   }

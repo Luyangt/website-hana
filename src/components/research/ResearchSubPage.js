@@ -36,6 +36,10 @@ const ResearchSubPage = () => {
             <Link smooth to="/research/Intelligent-3D-printing" className="research-topic-link">
               <div className="research-topic-item">
                 <div className="card-top-border"></div>
+                <img 
+                 src="/images/Projects/Grand Theft Autonomous/header.png" 
+                 alt="Grand Theft Autonomous" 
+                />
                 <div className="topic-text">
                   <h3>Development of Intelligent 3D Printing System</h3>
                 </div>
@@ -125,6 +129,10 @@ const ResearchSubPage = () => {
           <section className="research-section">
             <PneumaticActuators />
           </section>
+
+          <section className="research-section">
+            <Lattice />
+          </section>
     
           <section className="research-section">
             <InkDevelopment />
@@ -139,9 +147,7 @@ const ResearchSubPage = () => {
             <UnderactuatedTails />
           </section>
 
-          <section className="research-section">
-            <Lattice />
-          </section>
+          
 
           <section className="research-section">
             <Thermodynamic />

@@ -1,98 +1,120 @@
 /* Overall container */
+.threeD-overall-container {
+  width: 100%;
+  background-color: white;
+}
+
+/* Inner container */
 .threeD-container {
-    width: 60%;
-    margin: 0 auto;
-    padding: 2rem;
-    background: #fff;
-    font-family: Arial, sans-serif;
-  }
-  
-  /* Hero / Header Section */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: transparent;
+  font-family: 'Nunito', sans-serif;
+  color: #333;
+}
+
+/* Header Section */
+.threeD-header-section {
+  margin-bottom: 3rem;
+}
+
+
+.threeD-title-section h1 {
+  text-align: center;
+  font-size: 2.3rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  line-height: 1.3;
+}
+
+.threeD-header-content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+/* Header Text */
+.threeD-header-text {
+  flex: 0 0 60%;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+
+/* Paragraphs, Lists, etc. below Titles */
+.threeD-header-text p{
+  margin-bottom: 1rem;
+}
+
+/* Header Image */
+.threeD-header-img {
+  flex: 0 0 40%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  margin-top: 1rem;
+}
+
+.threeD-header-img img {
+  width: 600px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Cards / Grid Section */
+.threeD-project-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* Centers the cards horizontally */
+  align-items: center;
+  gap: 8rem;
+  max-width: 1200px;
+}
+
+/* Card Styling */
+.threeD-card {
+  background: transparent;
+  padding: 1rem;
+  text-align: center;
+  max-width: 600px;
+  margin-top: 2rem;
+}
+
+#threeD-card1 img{
+  width: auto; 
+  height: 660px;
+  max-width: 600px;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+#threeD-card2 img{
+  width: auto; 
+  height: 700px;
+  max-width: 600px;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 992px) {
   .threeD-header-section {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    margin-bottom: 2rem;
-  }
-  
-  /* Image on the left */
-  .threeD-header-img {
-    flex: 1 1 40%;
-    max-width: 40%;
-  }
-  .threeD-header-img img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  .threeD-header-img h4 {
-    margin-top: 1rem;
-    font-size: 1rem;
-    text-align: center;
-    color: #666;
-  }
-  
-  /* Text on the right */
-  .threeD-header-text {
-    flex: 1 1 55%;
-    max-width: 55%;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-  }
-  .threeD-title-section {
-    margin-bottom: 1rem;
-  }
-  .threeD-title-section h1 {
-    font-size: 2rem;
-    color: #333;
-    margin: 0;
-  }
-  .threeD-header-text p {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #555;
-    margin-bottom: 1rem;
-  }
-  
-  /* Project Cards Section */
-  .threeD-project-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
-  }
-  
-  /* Card styling */
-  .threeD-card {
-    background: #f9f9f9;
-    padding: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 8px;
     text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-  }
-  .threeD-card img,
-  .card1-img1 {
-    width: 100%;
-    height: auto;
-    border-radius: 4px;
-    margin-bottom: 0.5rem;
   }
   
-  /* Responsive adjustments */
-  @media (max-width: 768px) {
-    .threeD-header-section {
-      flex-direction: column;
-      align-items: center;
-    }
-    .threeD-header-img,
-    .threeD-header-text {
-      max-width: 100%;
-      flex: 1 1 100%;
-    }
-    .threeD-title-section h1 {
-      font-size: 1.75rem;
-    }
+  .threeD-header-text {
+    max-width: 100%;
   }
+  
+  .threeD-header-img {
+    margin-bottom: 1.5rem;
+  }
+}
