@@ -1,53 +1,72 @@
 import React from "react";
+import { HashLink as Link } from 'react-router-hash-link';
 import "../../styles/Activity/ActivityMainPage.css"; 
 import Conference from "./conference";
 import China_from_china from "./China_from_china";
 import Chinese_new_year_gala from "./Chinese_new_year_gala";
 
 const Activity = () => {
-  const activities = [
-    { name: "Contest and Conference", id: "conference" },
-    { name: "Teaching Assistant", id: "teaching-assitant" },
-    { name: "Workshop: China from China", id: "china" },
-    { name: "Chief Director - Grand Philadelphia Area Chinese New Year Gala", id: "gala" },
-  ];
-
   return (
-    <div className="activity-page">
-      <div className="summary">
-            {/* Navigation at the top-left */}
-        <div className="activity-nav">
-            <h1>Activities</h1>
-            <ul>
-            {activities.map((activity, index) => (
-                <li key={index}>
-                <a href={`#${activity.id}`} className="activity-link">
-                    {activity.name}
-                </a>
-                </li>
-            ))}
-            </ul>
-        </div>
+    <div className="activity-container">
+      <div className="activity-header">
         {/* Image at the top-right */}
-        <div className="top-image">
-                <img src="/images/activity-image.png" alt="Activities Visualization" />
+        <div className="activity-header-image">
+          <img src="/images/Activities/banner1.png" alt="Activities Visualization" />
         </div>
       </div>
-      
 
+      {/* Activity Overview */}
+      <div className="activity-topics-link">
+        <h2 className="activity-topics-title">ACTIVITY OVERVIEW</h2>
+        <div className="activity-topics-list">
+          <Link smooth to="#material-day" className="topic-link">
+          <div className="topic-card">
+            <div className="card-top-border"></div>
+            <img 
+                src="/images/Projects/Grand Theft Autonomous/header.png" 
+                alt="Grand Theft Autonomous" 
+            />
+            <div className="topic-text">
+              <h3>Presenter at Philly material day</h3>
+            </div>
+          </div> 
+          </Link>
+
+          <Link smooth to="#china" className="topic-link">
+          <div className="topic-card">
+            <div className="card-top-border"></div>
+            <img 
+                src="/images/Projects/Grand Theft Autonomous/header.png" 
+                alt="Grand Theft Autonomous" 
+            />
+            <div className="topic-text">
+              <h3>International educator at Penn Museum</h3>
+            </div>
+          </div> 
+          </Link>
+
+          <Link smooth to="#gala" className="topic-link">
+          <div className="topic-card">
+            <div className="card-top-border"></div>
+            <img 
+                src="/images/Projects/Grand Theft Autonomous/header.png" 
+                alt="Grand Theft Autonomous" 
+            />
+            <div className="topic-text">
+              <h3>Director of the Greater Philadelphia Chinese New Year Gala</h3>
+            </div>
+          </div> 
+          </Link>
+        </div>
+      </div>
+
+      
       {/* Activity Sections */}
-      <div className="activity-content">
-        <section id="conference" className="activity-section">
-            <h2>Contest and Conference</h2>
+      <div className="activity-main-content">
+        <section id="material-day" className="activity-section">
             <Conference />
         </section>
 
-        <section id="teaching-assistant" className="activity-section">
-            <h2>Teaching Assistant</h2>
-            <p>
-                I have worked as a teaching assistant for various courses.
-            </p>
-        </section>
 
         <section id="china" className="activity-section">
             <China_from_china />

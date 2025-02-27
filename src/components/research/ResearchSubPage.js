@@ -33,31 +33,7 @@ const ResearchSubPage = () => {
         <div className="research-topics-list">
           {/* First Row: 4 Cards */}
           <div className="topic-row" id="topic-row-1">
-            <Link smooth to="#Intelligent-3D-printing" className="research-topic-link">
-              <div className="research-topic-item">
-                <div className="card-top-border"></div>
-                <img 
-                 src="/images/Research/3D Printing/header.png" 
-                 alt="Grand Theft Autonomous" 
-                />
-                <div className="topic-text">
-                  <h3>Intelligent 3D Printing System</h3>
-                </div>
-              </div>
-            </Link>
-            <Link smooth to="#InkDevelopment" className="research-topic-link">
-              <div className="research-topic-item">
-                <div className="card-top-border"></div>
-                <img 
-                 src="images/Research/InkDevelopment/Picture1.png" 
-                 alt="Ink Development for Direct Ink Writing (DIW) 3D Printing" 
-                />
-                <div className="topic-text">
-                  <h3>Ink Development for Direct Ink Writing 3D Printing</h3>
-                </div>
-              </div>
-            </Link>
-            <Link smooth to="#ElectronicsFree-soft-robots" className="research-topic-link">
+          <Link smooth to="#ElectronicsFree-soft-robots" className="research-topic-link">
               <div className="research-topic-item">
                 <div className="card-top-border"></div>
                 <img 
@@ -81,9 +57,6 @@ const ResearchSubPage = () => {
                 </div>
               </div>
             </Link>
-          </div>
-          {/* Second Row: 5 Cards */}
-          <div className="topic-row" id="topic-row-2">
             <Link smooth to="#PneumaticActuators" className="research-topic-link">
               <div className="research-topic-item">
                 <div className="card-top-border"></div>
@@ -96,18 +69,7 @@ const ResearchSubPage = () => {
                 </div>
               </div>
             </Link>
-            <Link smooth to="#UnderactuatedTails" className="research-topic-link">
-              <div className="research-topic-item">
-                <div className="card-top-border"></div>
-                <img 
-                 src="/images/Research/UnderactuatedTails/link.png" 
-                 alt="Dynamics and Design of Underactuated Tails for Motion Stability" 
-                />
-                <div className="topic-text">
-                  <h3>Underactuated Tails </h3>
-                </div>
-              </div>
-            </Link>
+            
             <Link smooth to="#Lattice" className="research-topic-link">
               <div className="research-topic-item">
                 <div className="card-top-border"></div>
@@ -120,15 +82,47 @@ const ResearchSubPage = () => {
                 </div>
               </div>
             </Link>
-            <Link smooth to="#Thermodynamic" className="research-topic-link">
+            <Link smooth to="#InkDevelopment" className="research-topic-link">
               <div className="research-topic-item">
                 <div className="card-top-border"></div>
                 <img 
-                 src="/images/Research/Thermodynamic/header.png" 
-                 alt="Thermodynamic Soft Robotics" 
+                 src="images/Research/InkDevelopment/link.png" 
+                 alt="Ink Development for Direct Ink Writing (DIW) 3D Printing" 
                 />
                 <div className="topic-text">
-                  <h3>Thermodynamic of Steel</h3>
+                  <h3>Ink Development for Direct Ink Writing 3D Printing</h3>
+                </div>
+              </div>
+            </Link>
+
+            
+            
+            
+          </div>
+          {/* Second Row: 5 Cards */}
+          <div className="topic-row" id="topic-row-2">
+          <Link smooth to="#Intelligent-3D-printing" className="research-topic-link">
+              <div className="research-topic-item">
+                <div className="card-top-border"></div>
+                <img 
+                 src="/images/Research/3D Printing/header.png" 
+                 alt="Grand Theft Autonomous" 
+                />
+                <div className="topic-text">
+                  <h3>Intelligent 3D Printing System</h3>
+                </div>
+              </div>
+            </Link>
+          
+            <Link smooth to="#UnderactuatedTails" className="research-topic-link">
+              <div className="research-topic-item">
+                <div className="card-top-border"></div>
+                <img 
+                 src="/images/Research/UnderactuatedTails/link.png" 
+                 alt="Dynamics and Design of Underactuated Tails for Motion Stability" 
+                />
+                <div className="topic-text">
+                  <h3>Underactuated Tails </h3>
                 </div>
               </div>
             </Link>
@@ -144,6 +138,20 @@ const ResearchSubPage = () => {
                 </div>
               </div>
             </Link>
+            
+            <Link smooth to="#Thermodynamic" className="research-topic-link">
+              <div className="research-topic-item">
+                <div className="card-top-border"></div>
+                <img 
+                 src="/images/Research/Thermodynamic/header.png" 
+                 alt="Thermodynamic Soft Robotics" 
+                />
+                <div className="topic-text">
+                  <h3>Thermodynamic of Steel</h3>
+                </div>
+              </div>
+            </Link>
+            
           </div>
         </div>
       </div>
