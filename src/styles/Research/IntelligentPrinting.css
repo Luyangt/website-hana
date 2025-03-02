@@ -19,7 +19,6 @@
   margin-bottom: 3rem;
 }
 
-
 .threeD-title-section h1 {
   text-align: center;
   font-size: 2.3rem;
@@ -42,9 +41,8 @@
   line-height: 1.6;
 }
 
-
 /* Paragraphs, Lists, etc. below Titles */
-.threeD-header-text p{
+.threeD-header-text p {
   margin-bottom: 1rem;
 }
 
@@ -86,22 +84,21 @@
   margin-top: 2rem;
 }
 
-#threeD-card1 img{
+#threeD-card1 img {
   width: auto; 
   height: 660px;
   max-width: 600px;
   border-radius: 4px;
   margin-bottom: 1rem;
 }
-#threeD-card2 img{
+
+#threeD-card2 img {
   width: auto; 
   height: 700px;
   max-width: 600px;
   border-radius: 4px;
   margin-bottom: 1rem;
 }
-
-
 
 /* Responsive Design */
 @media (max-width: 992px) {

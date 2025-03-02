@@ -67,8 +67,6 @@
   clear: both;
 }
 
-
-
 /* 1) Container for both cards side by side */
 .nano-project-cards {
   display: flex;
@@ -126,8 +124,6 @@
   margin-bottom: 0.5rem;
 }
 
-
-
 /* Responsive Design */
 @media (max-width: 992px) {
   .nano-header-section {
@@ -141,5 +137,41 @@
   
   .nano-header-img {
     margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .nano-container {
+    padding: 2rem;
+  }
+
+  .nano-title-section {
+    font-size: 1.8rem;
+  }
+
+  .nano-body-text {
+    font-size: 1rem;
+  }
+
+  .nano-img-right,
+  .nano-img-left {
+    width: 100%;
+    margin: 0 0 1rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .nano-title-section {
+    font-size: 1.5rem;
+  }
+
+  .nano-body-text {
+    font-size: 0.9rem;
+  }
+
+  .nano-img-right,
+  .nano-img-left {
+    width: 100%;
+    margin: 0 0 1rem 0;
   }
 }

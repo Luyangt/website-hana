@@ -87,3 +87,35 @@
     max-width: 100%;
   }
 }
+
+@media (max-width: 768px) {
+  .pa-container {
+    padding: 2rem;
+  }
+
+  .pa-title-section h1 {
+    font-size: 2rem;
+  }
+
+  .pa-header-text {
+    font-size: 0.9rem;
+  }
+
+  .pa-header-image img {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .pa-title-section h1 {
+    font-size: 1.5rem;
+  }
+
+  .pa-header-text {
+    font-size: 0.8rem;
+  }
+
+  .pa-header-image img {
+    max-width: 100%;
+  }
+}
