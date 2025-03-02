@@ -31,6 +31,7 @@ import ClothesCaringMachine from "./components/projects/Clocle-multifunction-mac
 import GrandTheftAutonomous from "./components/projects/Grand-theft-autonomous.js";
 import BitcoinExplore from "./components/projects/BitcoinExplore.js";
 import Nanofabrication from "./components/projects/Nanofabrication.js";
+import MalariaDetection from "./components/projects/MalariaDetection.js";
 
 
 const App = () => {
@@ -67,6 +68,7 @@ const App = () => {
         <Route path="/projects/Grand-theft-autonomous" element={<GrandTheftAutonomous />} />
         <Route path="/projects/BitcoinExplore" element={<BitcoinExplore />} />
         <Route path="/projects/Nanofabrication" element={<Nanofabrication />} />
+        <Route path="/projects/MalariaDetection" element={<MalariaDetection />} />
     
 
       </Routes>
