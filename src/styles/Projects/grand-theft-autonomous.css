@@ -1,122 +1,224 @@
 /* Overall container */
 .gta-overall-container {
   width: 100%;
-  background-color:#f5f5f5;
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0;
 }
+
+/* Inner container */
 .gta-container {
   max-width: 1200px;
   margin: 50px auto;
-  padding: 5rem;
-  background: transparent; /* White background */
-  font-family: 'Nunito', sans-serif; 
+  padding: 0;
+  background: transparent;
+  font-family: 'Nunito', sans-serif;
   color: #333;
-
 }
 
-/* Hero / Header Section (like Functional Matter) */
+/* Hero / Header Section */
 .gta-header-section {
   display: flex;
-  align-items: center;       /* Vertically center content */
+  flex-wrap: wrap;
+  align-items: center;
   justify-content: space-between;
   gap: 2rem;
   margin-bottom: 3rem;
 }
 
-/* Text on the right */
+/* Header Text */
 .gta-header-text {
-  flex: 1 1 auto;
-  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
   line-height: 1.6;
+  max-width: 90%;
 }
 
-/* Title section */
-.gta-title-section h2 {
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-size: 1rem;
-  color: #888; /* Lighter color for subheading */
-  margin-bottom: 0.5rem;
+.gta-title-section {
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
+/* Title Section */
 .gta-title-section h1 {
-  font-size: 2rem; 
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
   font-weight: 700;
   margin-bottom: 1rem;
   line-height: 1.3;
 }
 
-/* Paragraphs, lists, etc. below the titles */
-.gta-header-text p,
-.gta-header-text ul {
-  margin-bottom: 1rem;
-  width: 100%;
+.gta-title-section h2 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  color: #888;
+  margin-bottom: 0.5rem;
 }
 
-/* Image on the right */
-.gta-header-image {
-  flex: 1; 
+/* Content: Ensure text on left, image on right */
+.gta-header-content {
   display: flex;
-  justify-content: center;
+  flex-direction: row; /* Keep text left, image right */
   align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  width: 100%;
+  flex-wrap: nowrap; /* Prevents wrapping on large screens */
+}
 
+/* Text Section */
+.gta-header-paragraph {
+  flex: 1;
+  min-width: 300px;
+  max-width: 55%; /* More space for text */
+}
+
+/* Image Section */
+.gta-header-image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end; /* Push image to the right */
+  align-items: center;
+  max-width: 45%; /* Increase image width */
 }
 
 .gta-header-image img {
-  width:650px;
+  width: 100%;
+  max-width: 750px; /* Bigger image */
   height: auto;
   border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 /* Cards / Grid Section */
 .gta-project-cards {
   display: flex;
-  justify-content: center;/* Centers the cards horizontally */
-  align-items: center;
-  gap: 3rem;
-
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
 }
 
+/* Individual Card */
 .gta-card {
   background: #fff;
   border: 1px solid #eee;
   border-radius: 8px;
   padding: 1rem;
   text-align: center;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-  max-width: 600px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  max-width: 500px;
+  width: 90%;
 }
 
-.gta-card #video1 {
-  width: auto; 
-  height: 300px;
+/* Responsive Video */
+.gta-card video {
+  width: 100%;
+  height: auto;
   border-radius: 4px;
   margin-bottom: 1rem;
 }
+
+/* Video Container Adjustments */
+.gta-card #video1,
 .gta-card #video2 {
-  width:  auto; 
-  height: 300px;
-  border-radius: 4px;
-  margin-bottom: 1rem;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
 }
 
+/* 🌐 Responsive Adjustments */
+/* Large Tablets & Small Laptops (max-width 1024px) */
+@media (max-width: 1024px) {
+  .gta-header-content {
+    flex-direction: row; /* Keep layout unless screen is small */
+    gap: 1.5rem;
+  }
 
-.gta-card-p {
-  margin-bottom: 1rem;
+  .gta-header-paragraph {
+    max-width: 60%;
+  }
+
+  .gta-header-image {
+    max-width: 40%;
+  }
+
+  .gta-project-cards {
+    gap: 1.5rem;
+  }
 }
 
-/* Responsive Design */
-@media (max-width: 992px) {
-  .gta-header-section {
-    flex-direction: column;
+/* Tablets (max-width 768px) */
+@media (max-width: 768px) {
+  .gta-container {
+    padding: 2rem;
+    margin: 30px auto;
+  }
+
+  .gta-header-content {
+    flex-direction: column; /* Stack text & image */
+    align-items: center;
     text-align: center;
   }
 
-  .gta-header-text {
+  .gta-header-paragraph {
     max-width: 100%;
   }
 
   .gta-header-image {
-    margin-top: 1.5rem;
+    max-width: 100%;
+    justify-content: center;
+  }
+
+  .gta-header-image img {
+    max-width: 600px;
+  }
+
+  .gta-project-cards {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .gta-card {
+    width: 100%;
+    max-width: 90%;
+  }
+}
+
+/* Mobile Devices (max-width 480px) */
+@media (max-width: 480px) {
+  .gta-container {
+    padding: 1.5rem;
+    margin: 20px auto;
+  }
+
+  .gta-header-content {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .gta-title-section h1 {
+    font-size: 1.6rem;
+  }
+
+  .gta-title-section h2 {
+    font-size: 0.8rem;
+  }
+
+  .gta-header-image {
+    max-width: 100%;
+  }
+
+  .gta-header-image img {
+    max-width: 100%; /* Full width on small screens */
+  }
+
+  .gta-card {
+    max-width: 350px;
+    padding: 0.8rem;
   }
 }

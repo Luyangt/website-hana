@@ -129,4 +129,49 @@
   .clocle-header-img {
     margin-bottom: 1.5rem;
   }
+
+  .clocle-project-cards {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .clocle-card {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .clocle-container {
+    padding: 2rem;
+  }
+
+  .clocle-header-img img {
+    height: 400px;
+  }
+
+  .clocle-card img {
+    height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .clocle-container {
+    padding: 1rem;
+  }
+
+  .clocle-header-img img {
+    height: 300px;
+  }
+
+  .clocle-card img {
+    height: 200px;
+  }
+
+  .clocle-title-section h1 {
+    font-size: 2rem;
+  }
+
+  .clocle-title-section h2 {
+    font-size: 1rem;
+  }
 }
