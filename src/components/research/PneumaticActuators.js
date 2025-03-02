@@ -47,7 +47,7 @@ const PneumaticActuators = () => {
       </div>
       <div className="ef-large-image">
         <img
-          src="/images/Research/PneumaticActuators/Picture1.png"
+          src="process.env.PUBLIC_URL + /images/Research/PneumaticActuators/Picture1.png"
           alt="Modular pneumatic actuators for versatile soft robotic application"
         />
       </div>
