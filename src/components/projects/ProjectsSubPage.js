@@ -2,7 +2,7 @@ import React from "react";
 import { HashLink as Link } from 'react-router-hash-link';
 import "../../styles/Projects/ProjectsSubPage.css";
 import ClothesCaringMachine from "./ClocleMultifunctionMachine.js";
-import GrandTheftAutonomous from "./Grand-theft-autonomous";
+import GrandTheftAutonomous from "./GrandTheftAutonomous.js";
 import BitcoinExplore from "./BitcoinExplore";
 import Nanofabrication from "./Nanofabrication";
 import MalariaDetection from "./MalariaDetection.js";
