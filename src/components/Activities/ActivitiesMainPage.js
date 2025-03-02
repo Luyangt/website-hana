@@ -23,8 +23,8 @@ const Activity = () => {
           <div className="topic-card">
             <div className="card-top-border"></div>
             <img 
-                src="/images/Projects/Grand Theft Autonomous/header.png" 
-                alt="Grand Theft Autonomous" 
+                src="/images/Activities/Conference/banner.png" 
+                alt="philly material day" 
             />
             <div className="topic-text">
               <h3>Presenter at Philly material day</h3>

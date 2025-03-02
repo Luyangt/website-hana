@@ -1,35 +1,184 @@
 
 /* Overall Page Styling */
-body {
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #F7F7F7; /* Light neutral background */
-  color: #333; /* Dark gray text */
+.main-page-overall-container {
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.main-page-container {
+  width: 100%;
+  margin: 0 auto;
+}
+.main-page-header {
+  width: 100%;
+  height: 800px;
+
+}
+.main-page-header #background-video {
+  width: 100%;
+  height: 800px;
+  object-fit: cover;
+}
+.main-page-header .header-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+  z-index: 2;
 }
 
-.main-page {
-  max-width: 90%; /* Use a percentage for responsiveness */
-  min-width: 1200px; /* Ensure a minimum width for larger content */
-  margin: 50px auto; /* Center the container and add more vertical spacing */
-  background-color:whitesmoke;
-  padding: 20px;
-  border-radius: 10px; /* Rounded corners */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  overflow: hidden; /* Prevent content from overflowing */
-}
+
   
-.main-page .introduction, .main-page .research-areas {
-  padding: 20px;
+.introduction {
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 5rem;
+  height:auto;
+  padding: 10px;
+}
+.introduction .introduction-header {
+  display: block;
+  unicode-bidi: isolate;
+}
+.introduction .introduction-header .introduction-title {
+  display: block;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  unicode-bidi: isolate;
+  font-family: "EB Garamond", serif;
+  color: #011F5B;
+  letter-spacing: 0;
+  font-weight: 400;
+  font-size: 3.5rem;
+  line-height: 1.5;
+  margin-top: 5;
 }
 
-.main-page .modules {
+.introduction .introduction-content {
   display: flex;
+  flex-direction: row;
+  gap: 4rem;
+}
+
+.introduction .introduction-content-paragraph {
+  display: block;
+  unicode-bidi: isolate;
+  color: black;
+  font-family: Georgia, serif;
+  font-size: 1.6rem;
+  line-height: 26px;
+  letter-spacing: 0;
+  font-weight: 400;
+  margin-top: 3;
+}
+
+.gallery {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 3rem;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
   justify-content: space-around;
 }
 
-.main-page .module {
-  background-color: #E2E7DF;
-  padding: 10px;
+.gallery img {
+  width: auto;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+
+.mainpage-topics-link {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+/* Section title */
+.mainpage-topics-title {
   text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Single row of cards */
+.mainpage-topics-list {
+  display: flex;         /* One row of cards */
+  flex-direction: row;
+  gap: 4rem;             /* Space between cards */
+  justify-content: center; 
+}
+
+/* Clickable link styles */
+.topic-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+/* Card container */
+.mainpage-topics-list .topic-card {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden; /* ensures the top border & image corners are neat */
+  transition: transform 0.2s;
+  
+}
+
+/* Hover effect */
+.topic-card:hover {
+  transform: scale(1.02);
+}
+
+/* Colored bar at the top of each card */
+.topic-link #research{
+  height: 5px;
+  background-color: #007bff; /* Adjust color as needed */
+}
+
+.topic-link  #project{
+  height: 5px;
+  background-color: rgba(136, 0, 255, 0.787); /* Adjust color as needed */
+}
+
+.topic-link  #activity{
+  height: 5px;
+  background-color: rgb(112, 216, 124); /* Adjust color as needed */
+}
+
+/* Card image */
+.mainpage-topics-list .topic-card .card-image {
+  width:100%;
+  height: 300px;
+  object-fit: cover;
+  
+}
+
+.topic-text {
+  margin-top: 0.5rem;
+}
+
+
+.topic-text h3 {
+  text-align: center!important;
+  font-size: 1rem; 
 }
