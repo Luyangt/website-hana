@@ -10,28 +10,15 @@ import Footer from "./components/Footer";
 
 // Research Pages
 import ResearchSubPage from "./components/research/ResearchSubPage.js";
-import InkDevelopment from "./components/research/InkDevelopment.js";
-import ThreeDPrinting from "./components/research/Intelligent-3D-printing.js";
-import UnderactuatedTails from "./components/research/UnderactuatedTails.js";
-import Lattice from "./components/research/Lattice.js";
-import Thermodynamic from "./components/research/Thermodynamic.js";
-import IronBased from "./components/research/IronBased.js";
-import ElectronicsFree from "./components/research/ElectronicsFree-soft-robots.js";
-import ModularStimuli from "./components/research/Modular-Stimuli-Responsive-Valve.js";
-import PneumaticActuators from "./components/research/PneumaticActuators.js";
+
 
 // Activities Pages
 import ActivitiesMainPage from "./components/Activities/ActivitiesMainPage.js";
-import China_from_china from "./components/Activities/China_from_china.js";
-import Chinese_new_year_gala from "./components/Activities/Chinese_new_year_gala.js";
+
 
 // Projects Pages
 import ProjectsSubPage from "./components/projects/ProjectsSubPage.js";
-import ClothesCaringMachine from "./components/projects/Clocle-multifunction-machine.js";
-import GrandTheftAutonomous from "./components/projects/Grand-theft-autonomous.js";
-import BitcoinExplore from "./components/projects/BitcoinExplore.js";
-import Nanofabrication from "./components/projects/Nanofabrication.js";
-import MalariaDetection from "./components/projects/MalariaDetection.js";
+
 
 
 const App = () => {
