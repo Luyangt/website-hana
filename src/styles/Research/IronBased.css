@@ -1,14 +1,14 @@
 /* Overall container */
 .iron-overall-container {
   width: 100%;
-  background-color: white;
+  background-color: #f5f5f5;
 }
 
 /* Inner container */
 .iron-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 5rem;
   background: transparent;
   font-family: 'Nunito', sans-serif;
   color: #333;

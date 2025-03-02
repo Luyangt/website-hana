@@ -7,7 +7,7 @@
 /* Inner container */
 .nano-container {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 50px  auto 80px auto;
   padding: 2rem 0 0 0;
   background: transparent;
   font-family: 'Nunito', sans-serif;

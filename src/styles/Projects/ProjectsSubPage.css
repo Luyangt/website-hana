@@ -135,9 +135,7 @@
   margin-top: 40px;
 }
 
-.project-section {
-  margin-bottom: 40px;
-}
+
 
 @media (max-width: 992px) {
   .project-content-wrapper {

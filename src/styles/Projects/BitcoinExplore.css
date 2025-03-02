@@ -8,6 +8,7 @@
   .bitcoin-explore {
     max-width: 1200px;
     margin: 0 auto;
+    margin-bottom: 5rem;
     padding: 2rem;
     background: #fdfdfd;
     font-family: 'Nunito', sans-serif;

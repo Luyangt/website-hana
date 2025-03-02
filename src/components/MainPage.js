@@ -69,7 +69,7 @@ const MainPage = () => {
             </div>
           </Link>
 
-          <Link to="/activities" className="topic-link">
+          <Link to="/projects" className="topic-link">
             <div className="topic-card">
               <div className="card-top-border" id="project"></div>
               <img src="/images/Projects/banner.png" alt="Research"  className="card-image" />
@@ -79,7 +79,7 @@ const MainPage = () => {
             </div>
           </Link>
 
-          <Link to="/projects" className="topic-link">
+          <Link to="/activities" className="topic-link">
             <div className="topic-card">
               <div className="card-top-border" id="activity"></div>
               <img src="/images/Activities/banner1.png" alt="Research"  className="card-image"/>

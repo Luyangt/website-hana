@@ -65,13 +65,17 @@
   gap: 4rem;
 }
 
+.introduction-content-image {
+  margin-top: 3rem;
+}
+
 .introduction .introduction-content-paragraph {
   display: block;
   unicode-bidi: isolate;
   color: black;
   font-family: Georgia, serif;
-  font-size: 1.6rem;
-  line-height: 26px;
+  font-size: 1.4rem;
+  line-height: 32px;
   letter-spacing: 0;
   font-weight: 400;
   margin-top: 3;
@@ -98,6 +102,7 @@
 .mainpage-topics-link {
   max-width: 1200px;
   margin: 0 auto;
+  margin-bottom: 5rem;
   padding: 2rem ;
   display: flex;
   flex-direction: column;
@@ -166,6 +171,15 @@
 }
 
 /* Card image */
+
+.mainpage-topics-title {
+  font-family: "EB Garamond", serif;
+  color: #011F5B;
+  letter-spacing: 0;
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 1.5;
+}
 .mainpage-topics-list .topic-card .card-image {
   width:100%;
   height: 300px;

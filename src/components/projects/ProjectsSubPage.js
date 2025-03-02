@@ -5,6 +5,7 @@ import ClothesCaringMachine from "./Clocle-multifunction-machine.js";
 import GrandTheftAutonomous from "./Grand-theft-autonomous";
 import BitcoinExplore from "./BitcoinExplore";
 import Nanofabrication from "./Nanofabrication";
+import MalariaDetection from "./MalariaDetection.js";
 
 const ProjectsSubPage = () => {
   return (
@@ -32,7 +33,7 @@ const ProjectsSubPage = () => {
                 alt="Grand Theft Autonomous" 
               />
               <div className="topic-text">
-                <h3>Grand Theft Autonomous - Can-Grabbing Robot</h3>
+                <h3>Grand Theft Autonomous<br/> Can-Grabbing Robot</h3>
               </div>
             </div>
           </Link>
@@ -45,7 +46,7 @@ const ProjectsSubPage = () => {
                 alt="Cloclé Multifunction Clothes Caring Machine" 
               />
               <div className="topic-text">
-                <h3>Cloclé Multifunction Clothes Caring Machine</h3>
+                <h3>Cloclé Multifunction Clothes<br/> Caring Machine</h3>
               </div>
             </div>
           </Link>
@@ -75,6 +76,19 @@ const ProjectsSubPage = () => {
               </div>
             </div>
           </Link>
+
+          <Link smooth to="#malaria-detection" className="topic-link">
+            <div className="topic-card">
+              <div className="card-top-border"></div>
+              <img 
+                src="/images/Projects/MalariaDetection/link.png" 
+                alt="MalariaDetection" 
+              />
+              <div className="topic-text">
+                <h3>Malaria Detection System</h3>
+              </div>
+            </div>
+          </Link>
         </div>
       </div>
 
@@ -94,6 +108,10 @@ const ProjectsSubPage = () => {
 
         <section id="Nanofabrication" className="project-section">
           <Nanofabrication />
+        </section>
+
+        <section id="malaria-detection" className="project-section">
+          <MalariaDetection />
         </section>
       </div>
     </div>

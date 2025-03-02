@@ -1,13 +1,12 @@
 /* Overall container */
 .gta-overall-container {
   width: 100%;
-  background-color:#ECECEC;
-
+  background-color:#f5f5f5;
 }
 .gta-container {
   max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem;
+  margin: 50px auto;
+  padding: 5rem;
   background: transparent; /* White background */
   font-family: 'Nunito', sans-serif; 
   color: #333;

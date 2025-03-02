@@ -3,17 +3,25 @@
     justify-content: space-between;
     background-color: white;
     align-items: center;
-    padding: 40px; /* Add padding inside the header for breathing room */
+    padding: 40px; 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow for better separation */
     border-bottom: 1px solid #4d5f70; 
   }
+
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    margin: 0 auto;
+  }
   
   .header nav a, .header nav .link {
-    margin: 0 15px;
+    margin: 0 20px;
     text-decoration: none;
     color: black; /* Dark gray for links */
-    font-weight: bold;
-    font-size: 15px;
+    font-weight: 500;
+    font-size: 17px;
   }
 
   .header nav a:hover, .header nav .link:hover {
