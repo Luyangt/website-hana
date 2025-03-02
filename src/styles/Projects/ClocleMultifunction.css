@@ -22,6 +22,7 @@
 /* Header Section */
 .clocle-header-section {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
@@ -34,7 +35,9 @@
   font-size: 1rem;
   line-height: 1.6;
 }
-
+.clocle-title-section {
+  text-align: center;
+}
 
 .clocle-title-section h1 {
   font-size: 2.5rem;
@@ -48,6 +51,13 @@
   font-size: 1.2rem;
   color: #888; /* Lighter color for subheading */
   margin-bottom: 0.5rem;
+}
+
+.clocle-header-content {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  margin-top: 2rem;
 }
 
 /* Paragraphs, Lists, etc. below Titles */
@@ -70,8 +80,8 @@
 }
 
 .clocle-header-img img {
-  width:auto;
-  height: 600px;
+  max-width: 400px;
+  height: auto;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
@@ -128,50 +138,5 @@
   
   .clocle-header-img {
     margin-bottom: 1.5rem;
-  }
-
-  .clocle-project-cards {
-    flex-direction: column;
-    gap: 2rem;
-  }
-
-  .clocle-card {
-    max-width: 100%;
-  }
-}
-
-@media (max-width: 768px) {
-  .clocle-container {
-    padding: 2rem;
-  }
-
-  .clocle-header-img img {
-    height: 400px;
-  }
-
-  .clocle-card img {
-    height: 300px;
-  }
-}
-
-@media (max-width: 480px) {
-  .clocle-container {
-    padding: 1rem;
-  }
-
-  .clocle-header-img img {
-    height: 300px;
-  }
-
-  .clocle-card img {
-    height: 200px;
-  }
-
-  .clocle-title-section h1 {
-    font-size: 2rem;
-  }
-
-  .clocle-title-section h2 {
-    font-size: 1rem;
   }
 }

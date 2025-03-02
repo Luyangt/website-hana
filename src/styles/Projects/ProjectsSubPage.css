@@ -83,7 +83,7 @@
   color: inherit;
 }
 
-.research-topic-item h3 {
+.project-topic-item h3 {
   font-size: 3rem;
   line-height: 4.5rem;
   margin-bottom: 1rem;
@@ -133,32 +133,88 @@
 /* Main Content Section */
 .project-main-content {
   margin-top: 40px;
+  clear: both;
+  width: 100%;
 }
 
 
 
+/* 🛠️ Adjust header for smaller screens */
 @media (max-width: 992px) {
-  .project-content-wrapper {
-    flex-direction: column;
-  }
-
   .project-header {
-    padding: 2rem 1rem;
+    flex-direction: column; /* Stack text and image */
+    text-align: center; /* Center text */
+    align-items: center;
+    padding: 0 1rem;
+    gap: 2rem;
   }
 
-  .project-header-text {
+  .project-header-text h1 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+
+  .project-header-text p {
+    font-size: 1rem;
     max-width: 100%;
   }
 
   .project-header-image {
-    max-width: 100%;
+    max-width: 80%; /* Reduce image size for better fit */
   }
+}
+
+/* 📱 Improve layout for mobile screens */
+@media (max-width: 768px) {
+
+  .project-topics-link {
+    height: auto; /* Adjust height for mobile layout */
+    padding: 1rem; /* Adjust padding for mobile layout */
+  }
+
 
   .project-topics-list {
-    margin-bottom: 20px;
+    flex-direction: column; /* Stack cards vertically */
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
   }
 
-  .project-hero-image {
-    max-width: 100%;
+  .topic-card {
+    width: 90%; /* Allow cards to take more space */
+    height: auto;
+  }
+
+  .topic-text h3 {
+    font-size: 1rem; /* Adjust text size for smaller screens */
+  }
+
+  .project-main-content {
+    margin-top: 3rem; /* Adjust for mobile layout */
+  }
+}
+
+/* 📱 Mobile-friendly adjustments */
+@media (max-width: 480px) {
+  .project-topics-link {
+    height: auto; /* Adjust height for mobile layout */
+    padding: 1rem; /* Adjust padding for mobile layout */
+  }
+  
+  .project-header-text h1 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  .project-header-image {
+    max-width: 90%;
+  }
+
+  .project-header-text p {
+    font-size: 0.9rem;
+  }
+
+  .topic-card {
+    width: 100%; /* Full width on mobile */
   }
 }
