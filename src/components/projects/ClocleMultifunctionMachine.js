@@ -59,14 +59,14 @@ const ClothesCaringMachine = () => {
               src="/images/Projects/Clothes Caring Machine/Picture1.png"
               alt="Clothes Caring Machine design image"
             />
-            <h3>Clothes Caring Machine Advertising image</h3>
+            <h3 className="clocle-card-explain">Clothes Caring Machine Advertising image</h3>
           </div>
           <div className="clocle-card">
             <img
               src="/images/Projects/Clothes Caring Machine/Picture2.png"
               alt="Clothes Caring Machine Advertising image"
             />
-            <h3>Clothes </h3>
+            <h3 className="clocle-card-explain">Clothes </h3>
           </div>
         </div>
       </div>

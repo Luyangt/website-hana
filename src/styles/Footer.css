@@ -1,58 +1,93 @@
-
 .footer {
-    background-color: white;
-    color: black;
-    padding: 20px;
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  background-color: white;
+  color: black;
+  padding: 20px;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .footer-container {
-    display: flex;
-    flex-direction: row;
-    width: 1200px;
-    justify-content: space-between;
-    align-items: center;
-    font-family: "EB Garamond", serif;
-    font-weight: 700;
-  }
+  display: flex;
+  flex-direction: row;
+  width: 1200px;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "EB Garamond", serif;
+  font-weight: 700;
+}
 
-  .footer-container .address {
-    text-align: center;
-  }
+.footer-container .address {
+  text-align: center;
+}
 
-  .footer-container .contact-info {
-    text-align: right;
-  }
-  
-  .footer-container p {
-    margin: 0;
-    padding-bottom: 10px;
-    font-size: 1rem;
-  }
-  
-  .github-link {
-    color: black;
-    text-decoration: none;
-    font-size: 1rem;
-  }
+/* Note: In your JSX the contact info is in a div with classes "contact info"
+ which does not match the ".contact-info" selector below.
+ To keep changes minimal, we add an extra rule in the media query if needed. */
+.footer-container .contact-info {
+  text-align: right;
+}
 
-  。github-icon {
-    width: 100px;
-    height: 60px;
-    margin-right: 8px;
-    vertical-align: middle;
-  }
-  
-  .github-link:hover {
-    color: #ffb500; /* Optional: Darken link color on hover */
-  }
-  
-  .github-icon {
-    width: 100px;
-    height: 60px;
-    margin-right: 8px;
-    vertical-align: middle;
-  }
+.footer-container p {
+  margin: 0;
+  padding-bottom: 10px;
+  font-size: 1rem;
+}
+
+.github-link {
+  color: black;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+/* The erroneous selector "。github-icon" has been omitted.
+ The correct rule is given below. */
+.github-icon {
+  width: 100px;
+  height: 60px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.github-link:hover {
+  color: #ffb500; /* Optional: Darken link color on hover */
+}
+
+/* ======================= */
+/* RESPONSIVE DESIGN */
+/* ======================= */
+
+/* For tablets and smaller screens */
+@media (max-width: 768px) {
+.footer-container {
+  flex-direction: column;
+  width: 100%;
+  padding: 0 20px;
+}
+.footer-container .address,
+/* Account for both naming variations */
+.footer-container .contact-info,
+.footer-container .contact {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.github-link {
+  text-align: center;
+  margin-bottom: 10px;
+}
+}
+
+/* For small mobile screens */
+@media (max-width: 480px) {
+.footer {
+  padding: 15px;
+}
+.footer-container p {
+  font-size: 0.9rem;
+}
+.github-icon {
+  width: 80px;
+  height: 50px;
+}
+}

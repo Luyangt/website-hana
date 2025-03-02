@@ -11,7 +11,7 @@
   justify-content: center;
   padding: 4rem 2rem;
   color: #fff; /* White text on dark background */
-  min-height: 500px; /* Ensures a tall banner */
+  height: 500px; /* Ensures a tall banner */
   width: 100%;
   margin: 0;
   gap: 3rem; /* Add space between text and image */
@@ -167,6 +167,10 @@
 /* 📱 Improve layout for mobile screens */
 @media (max-width: 768px) {
 
+  .project-header {
+    height: 450px;
+  }
+
   .project-topics-link {
     height: auto; /* Adjust height for mobile layout */
     padding: 1rem; /* Adjust padding for mobile layout */
@@ -196,6 +200,10 @@
 
 /* 📱 Mobile-friendly adjustments */
 @media (max-width: 480px) {
+  .project-header {
+    height: 450px;
+  }
+
   .project-topics-link {
     height: auto; /* Adjust height for mobile layout */
     padding: 1rem; /* Adjust padding for mobile layout */

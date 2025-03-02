@@ -125,7 +125,11 @@
   color: #333;
 }
 
-/* Responsive Design */
+/* ======================= */
+/* RESPONSIVE DESIGN */
+/* ======================= */
+
+/* Tablet screens */
 @media (max-width: 992px) {
   .clocle-header-section {
     flex-direction: column;
@@ -136,7 +140,97 @@
     max-width: 100%;
   }
   
+  .clocle-header-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  
   .clocle-header-img {
     margin-bottom: 1.5rem;
+    /* Ensure the image container scales properly */
+    max-width: 90%;
   }
+  
+  .clocle-project-cards {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .clocle-card {
+    max-width: 80%;
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 768px) {
+  .clocle-container {
+    padding: 2rem;
+  }
+  
+  .clocle-title-section h1 {
+    font-size: 2rem;
+  }
+  
+  .clocle-title-section h2 {
+    font-size: 1rem;
+  }
+
+  .clocle-header-paragraph {
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  .clocle-header-img img {
+    width: 100%;
+  }
+  
+  .clocle-project-cards {
+    gap: 1.5rem;
+  }
+  
+  .clocle-card {
+    max-width: 90%;
+  }
+  
+  .clocle-card img {
+    width: 100%;
+    height: auto;
+  }
+  .clocle-card .clocle-card-explain {
+    font-size: 0.8rem;
+  }
+
+}
+
+/* Small mobile screens */
+@media (max-width: 480px) {
+  .clocle-container {
+    padding: 1.5rem;
+  }
+  
+  .clocle-title-section h1 {
+    font-size: 1.8rem;
+  }
+  
+  .clocle-title-section h2 {
+    font-size: 0.9rem;
+  }
+  
+  .clocle-header-text {
+    font-size: 0.9rem;
+  }
+
+  .clocle-header-img img {
+    width: 100%;
+  }
+
+  
+  .clocle-card img {
+    width: 100%;
+    height: auto;
+  }
+  .clocle-card .clocle-card-explain {
+    font-size: 0.8rem;
+  }
+
 }
