@@ -2,7 +2,7 @@ import React from "react";
 import { HashLink as Link } from 'react-router-hash-link';
 import "../../styles/Research/ResearchSubPage.css";
 import InkDevelopment from "./InkDevelopment";
-import ThreeDPrinting from "./Intelligent-3D-printing";
+import ThreeDPrinting from "./IntelligentPrinting";
 import ElectronicsFree from "./ElectronicsFree-soft-robots";
 import ModularStimuli from "./Modular-Stimuli-Responsive-Valve";
 import PneumaticActuators from "./PneumaticActuators";

@@ -1,5 +1,5 @@
 import React from "react";
-import "../../styles/Research/3DPrinting.css";
+import "../../styles/Research/IntelligentPrinting.css";
 
 const ThreeDPrinting = () => {
   return (
