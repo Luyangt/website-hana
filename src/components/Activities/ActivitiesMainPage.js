@@ -23,7 +23,7 @@ const Activity = () => {
           <div className="topic-card">
             <div className="card-top-border"></div>
             <img 
-                src="/images/Activities/Conference/banner.png" 
+                src="/images/Activities/Conference/Picture1.png" 
                 alt="philly material day" 
             />
             <div className="topic-text">
@@ -36,7 +36,7 @@ const Activity = () => {
           <div className="topic-card">
             <div className="card-top-border"></div>
             <img 
-                src="/images/Projects/Grand Theft Autonomous/header.png" 
+                src="/images/Activities/China from China/header.png" 
                 alt="Grand Theft Autonomous" 
             />
             <div className="topic-text">
@@ -49,8 +49,8 @@ const Activity = () => {
           <div className="topic-card">
             <div className="card-top-border"></div>
             <img 
-                src="/images/Projects/Grand Theft Autonomous/header.png" 
-                alt="Grand Theft Autonomous" 
+                src="/images/Activities/Gala/Picture1.png" 
+                alt="gala" 
             />
             <div className="topic-text">
               <h3>Director of the Greater Philadelphia Chinese New Year Gala</h3>
