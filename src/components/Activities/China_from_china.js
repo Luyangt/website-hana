@@ -33,7 +33,7 @@ const China_from_china = () => {
             </div>
             <div className="china-header-image">
               <img
-                src="images/Activities/China from China/header.png"
+                src={process.env.PUBLIC_URL + "/images/Activities/China from China/header.png"}
                 alt="China from China"
               />
             </div>
@@ -41,7 +41,7 @@ const China_from_china = () => {
       </div>
       <div className="china-large-image">
         <img
-          src="/images/Activities/China from China/Picture1.png"
+          src={process.env.PUBLIC_URL + "/images/Activities/China from China/Picture1.png"}
           alt="Modular pneumatic actuators for versatile soft robotic application"
         />
       </div>
