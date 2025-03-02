@@ -5,6 +5,9 @@ import ScrollToTop from "./ScrollToTop.js";
 // Shared components
 import Header from "./components/Header";
 
+import MainPage from "./components/MainPage";
+import Footer from "./components/Footer";
+
 // Research Pages
 import ResearchSubPage from "./components/research/ResearchSubPage.js";
 import InkDevelopment from "./components/research/InkDevelopment.js";
