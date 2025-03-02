@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/wbsite-hana/static/css/main.39d78c27.css",
+    "main.js": "/wbsite-hana/static/js/main.b96c8622.js",
+    "index.html": "/wbsite-hana/index.html",
+    "main.39d78c27.css.map": "/wbsite-hana/static/css/main.39d78c27.css.map",
+    "main.b96c8622.js.map": "/wbsite-hana/static/js/main.b96c8622.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.39d78c27.css",
+    "static/js/main.b96c8622.js"
+  ]
+}
