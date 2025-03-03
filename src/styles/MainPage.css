@@ -152,17 +152,17 @@
   
 .topic-link #research {
   height: 5px;
-  background-color: #007bff; /* Adjust color as needed */
+  background-color: #FAED70; /* Adjust color as needed */
 }
   
 .topic-link #project {
   height: 5px;
-  background-color: rgba(136, 0, 255, 0.787); /* Adjust color as needed */
+  background-color: #FA84B5(136, 0, 255, 0.787); /* Adjust color as needed */
 }
   
 .topic-link #activity {
   height: 5px;
-  background-color: rgb(112, 216, 124); /* Adjust color as needed */
+  background-color: #70E3FA(112, 216, 124); /* Adjust color as needed */
 }
   
 .mainpage-topics-title {
