@@ -4,6 +4,7 @@
   margin: 0 auto;
   box-sizing: border-box;
 }
+
 .research-header {
   background-color: black;
   display: flex;
@@ -19,7 +20,6 @@
 
 .research-header-text {
   flex: 0 0 auto;
-
 }
 
 .research-header-text h1 {
@@ -42,7 +42,6 @@
   max-width: 50%;
   border: none;
   outline: none;
- 
 }
 
 .research-header-image img {
@@ -57,8 +56,7 @@
   max-width: 1200px;
   height: 900px; 
   margin: 0 auto;
-  padding: 2rem ;
-
+  padding: 2rem;
 }
 
 .research-topics-title {
@@ -102,13 +100,12 @@
   background: #fff;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  overflow: hidden; 
+  overflow: hidden;
   transition: transform 0.2s;
   display: flex;
   flex-direction: column;
-  height: 260px;
   width: 260px;
-
+  height: 260px; /* Fixed height on desktop */
 }
 
 .research-topic-item:hover {
@@ -119,25 +116,24 @@
 .card-top-border {
   flex: 0 0 auto;
   height: 5px;
-  background-color: #007bff;  /* Adjust color as needed */
+  background-color: #007bff;
 }
-
 
 .research-topic-item .topic-text h3 {
   text-align: center!important;
-
-  font-size: 1rem; 
+  font-size: 1rem;
   margin-top: 1.5rem;
   line-height: 1.2;
 }
 
+/* Image inside the card */
 .research-topic-item img {
-  max-width: auto;
-  height: 180px;
+  width: 100%;
+  height: 180px;     /* Consistent image height */
+  object-fit: cover; /* Crop to fit if aspect ratios differ */
   border-radius: 8px;
   box-shadow: none;
 }
-
 
 /* Main Content Section */
 .research-main-content {
@@ -148,28 +144,109 @@
   margin-bottom: 40px;
 }
 
-@media (max-width: 992px) {
-  .research-content-wrapper {
-    flex-direction: column;
-  }
+/* ======================= */
+/* RESPONSIVE DESIGN */
+/* ======================= */
 
+/* For tablets (up to 992px) */
+@media (max-width: 992px) {
+  /* Adjust header and image sizing */
   .research-header {
     padding: 2rem 1rem;
+    gap: 1.5rem;
   }
-
   .research-header-text {
     max-width: 100%;
   }
-
   .research-header-image {
     max-width: 100%;
   }
+  /* Let the topics link section adjust its height */
+  .research-topics-link {
+    height: auto;
+    padding: 2rem 1rem;
+  }
+  /* Make rows wrap if needed and center items */
+  .topic-row {
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+  }
+  /* Keep consistent card size */
+  .research-topic-item {
+    width: 45%;
+    max-width: 260px;
+    height: 260px;  /* Retain fixed height */
+    margin-bottom: 1rem;
+  }
+  .research-topic-item img {
+    height: 180px;
+  }
+}
 
-  .research-topics-list {
-    margin-bottom: 20px;
+/* For mobile screens (up to 768px) */
+@media (max-width: 768px) {
+  .research-header {
+    flex-direction: column;
+    padding: 1.5rem 1rem;
+    gap: 1.5rem;
+  }
+  .research-header-text h1 {
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+  }
+  .research-header-text p {
+    font-size: 1rem;
+  }
+  .research-header-image {
+    margin-top: 1rem;
   }
 
-  .research-hero-image {
-    max-width: 100%;
+  .research-topics-title {
+    font-size: 1.5rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  .topic-row {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+  }
+  .research-topic-item {
+    width: 100%;
+    max-width: 300px;
+    height: 260px; /* Keep the same height */
+  }
+  .research-topic-item img {
+    height: 180px;
+  }
+}
+
+/* For small mobile screens (up to 480px) */
+@media (max-width: 480px) {
+  .research-header {
+    padding: 1rem;
+    gap: 1rem;
+  }
+  .research-header-text h1 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+  .research-header-text p {
+    font-size: 0.9rem;
+  }
+  .research-topics-title {
+    font-size: 1.3rem;
+  }
+  .topic-row {
+    align-items: center;
+  }
+  .research-topic-item {
+    width: 100%;
+    max-width: 280px;
+    height: 260px; /* Still fixed */
+  }
+  .research-topic-item img {
+    height: 180px;
   }
 }

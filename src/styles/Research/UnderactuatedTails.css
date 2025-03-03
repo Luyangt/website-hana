@@ -64,12 +64,65 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
+/* ======================= */
+/* RESPONSIVE DESIGN */
+/* ======================= */
 
-
-/* Responsive Design */
+/* For screens up to 1024px */
 @media (max-width: 1024px) {
   .ut-header-content {
     flex-direction: column;
+    align-items: center;
+  }
+
+  .ut-header-text {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .ut-header-image {
+    max-width: 100%;
+    margin-top: 1.5rem;
+  }
+
+  .ut-header-image img {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+  }
+}
+
+/* For screens up to 768px */
+@media (max-width: 768px) {
+  .ut-container {
+    padding: 3rem 2rem;
+  }
+
+  .ut-title-section h1 {
+    font-size: 2rem;
+  }
+
+  .ut-header-text {
+    font-size: 1rem;
+  }
+
+  .ut-header-image img {
+    max-width: 500px;
+  }
+}
+
+/* For small mobile screens */
+@media (max-width: 480px) {
+  .ut-container {
+    padding: 2rem 1rem;
+  }
+
+  .ut-title-section h1 {
+    font-size: 1.8rem;
+  }
+
+  .ut-header-text {
+    font-size: 0.9rem;
   }
 
   .ut-header-image img {

@@ -1,11 +1,11 @@
-/* Research Page Styling */
+/* Activity Page Styling */
 .activity-container {
     width: 100%;
     margin: 0 auto;
     box-sizing: border-box;
 }
+
 .activity-header {
-    background-color: black;
     color: #fff; /* White text on dark background */
     width: 100%;
     margin: 0;
@@ -19,14 +19,14 @@
 .activity-header-image img {
     width: 100%;
     height: auto;
-} 
+}
 
 /* Container for the entire section */
 .activity-topics-link {
     max-width: 1200px;
-    height: 550px; 
+    height: auto;
     margin: 0 auto;
-    padding: 2rem ;
+   
 }
 
 /* Section title */
@@ -41,21 +41,16 @@
 
 /* Single row of cards */
 .activity-topics-list {
-    display: flex;         /* One row of cards */
-    gap: 2rem;             /* Space between cards */
-    justify-content: center; /* Center them horizontally (optional) */
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 /* Clickable link styles */
 .topic-link {
     text-decoration: none;
     color: inherit;
-}
-
-.activity-topic-item h3 {
-    font-size: 3rem;
-    line-height: 4.5rem;
-    margin-bottom: 1rem;
 }
 
 /* Card container */
@@ -67,8 +62,8 @@
     transition: transform 0.2s;
     display: flex;
     flex-direction: column;
-    height: 300px;
-    width: 300px;
+    height: 500px;
+    width: 500px;
 }
 
 /* Hover effect */
@@ -79,18 +74,19 @@
 /* Colored bar at the top of each card */
 .card-top-border {
     height: 5px;
-    background-color: #007bff; /* Adjust color as needed */
+    background-color: #007bff;
 }
 
 /* Card image */
 .topic-card img {
     width: 100%;
-    max-height: 200px; 
+    max-height: 200px;
     object-fit: cover;
     display: block;
     margin-bottom: 0.5rem;
 }
 
+/* Card text */
 .topic-text h3 {
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
@@ -107,28 +103,102 @@
     margin-bottom: 40px;
 }
 
+/* ======================= */
+/* RESPONSIVE DESIGN */
+/* ======================= */
+
+
+/* For tablets (up to 992px) */
 @media (max-width: 992px) {
-    .activity-content-wrapper {
-        flex-direction: column;
-    }
-
-    .activity-header {
-        padding: 2rem 1rem;
-    }
-
-    .activity-header-text {
-        max-width: 100%;
-    }
-
     .activity-header-image {
         max-width: 100%;
     }
-
+    
     .activity-topics-list {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
         margin-bottom: 20px;
     }
+    
+    .topic-card {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+    }
+    
+    .topic-card img {
+        max-height: 180px;
+    }
+    
+    .topic-text h3 {
+        font-size: 1.1rem;
+    }
+}
 
-    .activity-hero-image {
-        max-width: 100%;
+/* For mobile screens (up to 768px) */
+@media (max-width: 768px) {
+    .activity-container {
+        padding: 2rem 1rem;
+    }
+    
+    .activity-topics-title {
+        font-size: 1.6rem;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+    
+    .activity-topics-list {
+        gap: 1rem;
+    }
+    
+    .topic-card {
+        width: 100%;
+        max-width: 350px;
+    }
+    
+    .topic-card img {
+        max-height: 160px;
+    }
+    
+    .topic-text h3 {
+        font-size: 1rem;
+    }
+}
+
+/* For small mobile screens (up to 480px) */
+@media (max-width: 480px) {
+    /* Remove extra space around the first image */
+    .activity-header {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .activity-header-image {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .activity-header-image img {
+        display: block;
+    }
+    
+    .activity-container {
+        padding: 1.5rem 1rem;
+    }
+    
+    .activity-topics-title {
+        font-size: 1.4rem;
+    }
+    
+    .topic-card {
+        width: 100%;
+        max-width: 320px;
+    }
+    
+    .topic-card img {
+        max-height: 140px;
+    }
+    
+    .topic-text h3 {
+        font-size: 0.9rem;
     }
 }

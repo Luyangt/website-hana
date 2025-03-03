@@ -48,7 +48,7 @@
 
 /* Header Image */
 .threeD-header-img {
-  flex: 0 0 40%; 
+  flex: 0 0 40%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -85,7 +85,7 @@
 }
 
 #threeD-card1 img {
-  width: auto; 
+  width: auto;
   height: 660px;
   max-width: 600px;
   border-radius: 4px;
@@ -93,25 +93,106 @@
 }
 
 #threeD-card2 img {
-  width: auto; 
+  width: auto;
   height: 700px;
   max-width: 600px;
   border-radius: 4px;
   margin-bottom: 1rem;
 }
 
-/* Responsive Design */
+/* ======================= */
+/* RESPONSIVE DESIGN */
+/* ======================= */
+
+/* For tablets and smaller screens */
 @media (max-width: 992px) {
-  .threeD-header-section {
+  .threeD-header-content {
     flex-direction: column;
+    align-items: center;
     text-align: center;
   }
-  
+
   .threeD-header-text {
     max-width: 100%;
   }
-  
+
   .threeD-header-img {
+    max-width: 100%;
     margin-bottom: 1.5rem;
+  }
+
+  .threeD-header-img img {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .threeD-project-cards {
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  .threeD-card {
+    max-width: 90%;
+  }
+
+  #threeD-card1 img,
+  #threeD-card2 img {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+  }
+}
+
+/* For mobile screens */
+@media (max-width: 768px) {
+  .threeD-container {
+    padding: 1.5rem;
+  }
+
+  .threeD-title-section h1 {
+    font-size: 2rem;
+  }
+
+  .threeD-header-text {
+    font-size: 0.9rem;
+  }
+
+  .threeD-header-img img {
+    max-width: 400px;
+  }
+
+  .threeD-project-cards {
+    gap: 2rem;
+  }
+
+  .threeD-card {
+    max-width: 100%;
+  }
+}
+
+/* For small mobile screens */
+@media (max-width: 480px) {
+  .threeD-container {
+    padding: 1rem;
+  }
+
+  .threeD-title-section h1 {
+    font-size: 1.8rem;
+  }
+
+  .threeD-header-text {
+    font-size: 0.85rem;
+  }
+
+  .threeD-header-img img {
+    max-width: 100%;
+  }
+
+  .threeD-project-cards {
+    gap: 1.5rem;
+  }
+
+  .threeD-card {
+    max-width: 100%;
   }
 }

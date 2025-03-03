@@ -14,7 +14,6 @@
 
 .thermo-header-section {
   margin-bottom: 3rem;
-  
 }
 
 /* Title Section - at the very top */
@@ -46,7 +45,7 @@
   margin-bottom: 1rem;
 }
 
-/* Image container on the left */
+/* Image container */
 .thermo-header-image {
   flex: 1 1 40%;
   max-width: 40%;
@@ -78,12 +77,10 @@
   max-width: 600px;
 }
 
-
-
 /* If card2 uses an inner image class */
 .thermo-card2 .thermo-card-image2 {
-  width: auto; 
-  height: 550px !important;
+  width: auto;
+  height: 550px !important; /* Base style forcing 550px */
   border-radius: 4px;
   margin-bottom: 1rem;
 }
@@ -91,7 +88,7 @@
 /* Layered card structure for cards with overlay images */
 .thermo-card-layer {
   position: relative;
-  display: inline-block; /* or block, as needed */
+  display: inline-block;
 }
 
 .bottom-layer {
@@ -108,20 +105,100 @@
   height: 100px;
 }
 
+/* ======================= */
+/* RESPONSIVE DESIGN */
+/* ======================= */
 
-
-/* Responsive adjustments */
+/* For tablets (up to 992px) */
 @media (max-width: 992px) {
-  .thermo-header-section {
+  .thermo-header-content {
     flex-direction: column;
     align-items: center;
+    text-align: center;
   }
-  
+
   .thermo-header-text {
     max-width: 100%;
   }
-  
-  .thermo-header-img {
+
+  .thermo-header-image {
+    max-width: 100%;
     margin-bottom: 1.5rem;
+  }
+
+  .thermo-header-image img {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .thermo-research-cards {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  /* Override the tall height on card2's image */
+  .thermo-card2 .thermo-card-image2 {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 500px; /* optional: set a max width */
+  }
+}
+
+/* For mobile screens (up to 768px) */
+@media (max-width: 768px) {
+  .thermo-container {
+    padding: 3rem 2rem;
+  }
+
+  .thermo-title-section h1 {
+    font-size: 2rem;
+  }
+
+  .thermo-header-text {
+    font-size: 1rem;
+  }
+
+  .thermo-header-image img {
+    max-width: 400px;
+  }
+
+  .thermo-research-cards {
+    gap: 2rem;
+  }
+
+  /* Override again on mobile for consistent sizing */
+  .thermo-card2 .thermo-card-image2 {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 400px; /* optional: set a max width */
+  }
+}
+
+/* For small mobile screens (up to 480px) */
+@media (max-width: 480px) {
+  .thermo-container {
+    padding: 2rem 1rem;
+  }
+
+  .thermo-title-section h1 {
+    font-size: 1.8rem;
+  }
+
+  .thermo-header-text {
+    font-size: 0.9rem;
+  }
+
+  .thermo-header-image img {
+    max-width: 100%;
+  }
+
+  .thermo-research-cards {
+    gap: 1.5rem;
+  }
+
+  /* Additional override for very small screens */
+  .thermo-card2 .thermo-card-image2 {
+    max-width: 100% !important;
+    height: auto !important;
   }
 }

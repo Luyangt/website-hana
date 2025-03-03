@@ -48,3 +48,73 @@
     height: auto;
     border-radius: 8px;
 }
+
+/* ======================= */
+/* RESPONSIVE DESIGN */
+/* ======================= */
+
+/* For tablets (up to 992px) */
+@media (max-width: 992px) {
+    .gala-container {
+        padding: 2rem;
+    }
+
+    .gala-title-section h1 {
+        font-size: 1.8rem;
+    }
+
+    .gala-image {
+        max-width: 100%;
+    }
+
+    .gala-image img {
+        width: 90%;
+        max-width: 800px;
+    }
+
+    .gala-paragraph {
+        font-size: 1rem;
+        text-align: center;
+    }
+}
+
+/* For mobile screens (up to 768px) */
+@media (max-width: 768px) {
+    .gala-container {
+        padding: 2rem 1.5rem;
+    }
+
+    .gala-title-section h1 {
+        font-size: 1.6rem;
+    }
+
+    .gala-image img {
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .gala-paragraph {
+        font-size: 1rem;
+        text-align: center;
+    }
+}
+
+/* For small mobile screens (up to 480px) */
+@media (max-width: 480px) {
+    .gala-container {
+        padding: 1.5rem 1rem;
+    }
+
+    .gala-title-section h1 {
+        font-size: 1.4rem;
+    }
+
+    .gala-image img {
+        max-width: 100%;
+    }
+
+    .gala-paragraph {
+        font-size: 1rem;
+        text-align: center;
+    }
+}
