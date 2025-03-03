@@ -162,6 +162,11 @@
   .project-header-image {
     max-width: 80%; /* Reduce image size for better fit */
   }
+  .project-topics-link {
+    width: 100%;
+    height: auto; /* Adjust height for mobile layout */
+    padding: 1rem; /* Adjust padding for mobile layout */
+  }
 }
 
 /* 📱 Improve layout for mobile screens */
@@ -172,6 +177,7 @@
   }
 
   .project-topics-link {
+    width: 100%;
     height: auto; /* Adjust height for mobile layout */
     padding: 1rem; /* Adjust padding for mobile layout */
   }
@@ -205,6 +211,7 @@
   }
 
   .project-topics-link {
+    width: 100%;
     height: auto; /* Adjust height for mobile layout */
     padding: 1rem; /* Adjust padding for mobile layout */
   }

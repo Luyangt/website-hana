@@ -163,6 +163,7 @@
   }
   /* Let the topics link section adjust its height */
   .research-topics-link {
+    width: 100%;
     height: auto;
     padding: 2rem 1rem;
   }
@@ -201,6 +202,11 @@
   .research-header-image {
     margin-top: 1rem;
   }
+  .research-topics-link {
+    width: 100%;
+    height: auto;
+    padding: 2rem 1rem;
+  }
 
   .research-topics-title {
     font-size: 1.5rem;
@@ -235,10 +241,18 @@
   .research-header-text p {
     font-size: 0.9rem;
   }
+  .research-topics-link {
+    width: 100%;
+    height: auto;
+    padding: 2rem 1rem;
+  }
+
   .research-topics-title {
     font-size: 1.3rem;
   }
   .topic-row {
+    flex-direction: column;
+    gap: 1.5rem;
     align-items: center;
   }
   .research-topic-item {
