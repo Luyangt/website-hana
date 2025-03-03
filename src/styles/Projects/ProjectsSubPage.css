@@ -55,7 +55,7 @@
 /* Container for the entire section */
 .project-topics-link {
   max-width: 1200px;
-  height: 550px; 
+  height: auto; 
   margin: 0 auto;
   padding: 2rem ;
 }
@@ -75,6 +75,7 @@
   display: flex;         /* One row of cards */
   gap: 2rem;             /* Space between cards */
   justify-content: center; /* Center them horizontally (optional) */
+  flex-wrap: wrap;
 }
 
 /* Clickable link styles */
