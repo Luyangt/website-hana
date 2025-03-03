@@ -15,7 +15,7 @@ const Footer = () => {
         </div>
         
         <a
-          href="https://github.com/your-profile"
+          href="https://github.com/huyuluku"
           className="github-link"
           target="_blank"
           rel="noopener noreferrer"
