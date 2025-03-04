@@ -28,7 +28,7 @@ const China_from_china = () => {
               </p>
               <p>
                 Beyond lectures, I have also organized <strong>guided tours in the Penn Museum's Asia Gallery</strong> and led specialized 
-                <strong>Chinese ceramic history sessions for Mandarin-speaking audiences</strong>.
+                <strong> Chinese ceramic history sessions for Mandarin-speaking audiences</strong>.
               </p>
             </div>
             <div className="china-header-image">

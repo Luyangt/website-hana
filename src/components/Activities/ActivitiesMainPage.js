@@ -40,7 +40,7 @@ const Activity = () => {
                 alt="Grand Theft Autonomous" 
             />
             <div className="topic-text">
-              <h3>International educator at Penn Museum</h3>
+              <h3>International Educator at Penn Museum</h3>
             </div>
           </div> 
           </Link>

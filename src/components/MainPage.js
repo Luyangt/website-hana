@@ -10,7 +10,7 @@ const MainPage = () => {
           <video id="background-video" loop autoPlay muted>
             <source src="/images/MainPage/video1.mp4"></source>
           </video>
-          <h1 className="header-title">Printing soft and living matter across multiple scales</h1>
+          {/* <h1 className="header-title">Printing soft and living matter across multiple scales</h1> */}
         </div>
       
 
@@ -32,8 +32,8 @@ const MainPage = () => {
             </p>
 
             <p>
-              I combine <strong>mechanics, nano fabrication, hardware design, and AI-based image processing</strong> 
-              to develop innovative soft robotic systems and manufacturing techniques. I also enjoy applying my 
+              I combine <strong>mechanics, nano fabrication, hardware design, and AI-based image processing </strong>  
+               to develop innovative soft robotic systems and manufacturing techniques. I also enjoy applying my 
               skills to <strong>engineering projects</strong>, from automation systems to material innovations.
             </p>
 
@@ -47,11 +47,11 @@ const MainPage = () => {
         </div>
       </div>
 
-      <div className="gallery">
+      {/* <div className="gallery">
         <img src="/images/MainPage/Picture1.png" alt="working in lab"></img>
         <img src="/images/MainPage/Picture2.png" alt="driving towing machine"></img>
         <img src="/images/MainPage/Picture3.png" alt="in Chinese traditional clothe"></img>
-      </div>
+      </div> */}
 
       
       <div className="mainpage-topics-link">

@@ -150,19 +150,19 @@
   transform: scale(1.02);
 }
   
-.topic-link #research {
+.topic-card #research {
   height: 5px;
-  background-color: #FAED70; /* Adjust color as needed */
+  background-color: rgba(253, 203, 3, 0.908); 
 }
   
-.topic-link #project {
+.topic-card #project {
   height: 5px;
-  background-color: #FA84B5(136, 0, 255, 0.787); /* Adjust color as needed */
+  background-color: rgb(69, 118, 254); 
 }
   
-.topic-link #activity {
+.topic-card #activity {
   height: 5px;
-  background-color: #70E3FA(112, 216, 124); /* Adjust color as needed */
+  background-color: rgba(83, 176, 33, 0.946); /* Adjust color as needed */
 }
   
 .mainpage-topics-title {
