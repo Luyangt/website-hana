@@ -31,8 +31,6 @@ const ResearchSubPage = () => {
       <div className="research-topics-link">
         <h2 className="research-topics-title">RESEARCH OVERVIEW</h2>
         <div className="research-topics-list">
-          {/* First Row: 4 Cards */}
-          <div className="topic-row" id="topic-row-1">
           <Link smooth to="#ElectronicsFree-soft-robots" className="research-topic-link">
               <div className="research-topic-item">
                 <div className="card-top-border"></div>
@@ -53,7 +51,7 @@ const ResearchSubPage = () => {
                  alt="Modular Stimuli-Responsive Valves for Pneumatic Soft Robots" 
                 />
                 <div className="topic-text">
-                  <h3>Modular Stimuli-Responsive Valves for Pneumatic Soft Robots</h3>
+                  <h3>Modular Valves for Pneumatic Soft Robots</h3>
                 </div>
               </div>
             </Link>
@@ -90,18 +88,11 @@ const ResearchSubPage = () => {
                  alt="Ink Development for Direct Ink Writing (DIW) 3D Printing" 
                 />
                 <div className="topic-text">
-                  <h3>Ink Development for Direct Ink Writing 3D Printing</h3>
+                  <h3>Ink Development for DIW 3D Printing</h3>
                 </div>
               </div>
             </Link>
-
-            
-            
-            
-          </div>
-          {/* Second Row: 5 Cards */}
-          <div className="topic-row" id="topic-row-2">
-          <Link smooth to="#Intelligent-3D-printing" className="research-topic-link">
+            <Link smooth to="#Intelligent-3D-printing" className="research-topic-link">
               <div className="research-topic-item">
                 <div className="card-top-border"></div>
                 <img 
@@ -113,7 +104,6 @@ const ResearchSubPage = () => {
                 </div>
               </div>
             </Link>
-          
             <Link smooth to="#UnderactuatedTails" className="research-topic-link">
               <div className="research-topic-item">
                 <div className="card-top-border"></div>
@@ -138,7 +128,6 @@ const ResearchSubPage = () => {
                 </div>
               </div>
             </Link>
-            
             <Link smooth to="#Thermodynamic" className="research-topic-link">
               <div className="research-topic-item">
                 <div className="card-top-border"></div>
@@ -151,8 +140,6 @@ const ResearchSubPage = () => {
                 </div>
               </div>
             </Link>
-            
-          </div>
         </div>
       </div>
 

@@ -5,13 +5,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem 0;
+  padding: clamp(1rem, 3vw, 2rem) 0;
 }
 
 /* Inner container */
 .gta-container {
   max-width: 1200px;
-  padding: 0;
+  margin: 0 auto;
+  padding: clamp(1.5rem, 3vw, 2rem);
   background: transparent;
   font-family: 'Nunito', sans-serif;
   color: #333;
@@ -23,29 +24,29 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  gap: 2rem;
-  margin-bottom: 3rem;
+  gap: clamp(1.5rem, 3vw, 2rem);
+  margin-bottom: clamp(2rem, 4vw, 3rem);
 }
 
 /* Header Text */
 .gta-header-text {
   display: flex;
   flex-direction: column;
-  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  font-size: clamp(0.9rem, 1.1vw, 1.2rem);
   line-height: 1.6;
 }
 
 .gta-title-section {
-  justify-content: flex-start; /* Align title to the left */
+  justify-content: flex-start;
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: clamp(1rem, 3vw, 2rem);
 }
 
 /* Title Section */
 .gta-title-section h1 {
   font-size: clamp(1.8rem, 4vw, 2.5rem);
   font-weight: 700;
-  margin-bottom: 1rem;
+  margin-bottom: clamp(0.5rem, 1.5vw, 1rem);
   line-height: 1.3;
 }
 
@@ -60,44 +61,52 @@
 /* Content: Ensure text on left, image on right */
 .gta-header-content {
   display: flex;
-  flex-direction: row; /* Keep text left, image right */
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  gap: 2rem;
+  gap: clamp(1.5rem, 3vw, 2rem);
   width: 100%;
-
 }
 
 /* Text Section */
 .gta-header-paragraph {
   flex: 1;
   min-width: 300px;
-  max-width: 50%; /* More space for text */
+  max-width: 50%;
+  font-size: clamp(0.9rem, 1.1vw, 1rem);
+  line-height: 1.6;
 }
 
 /* Image Section */
 .gta-header-image {
   flex: 1;
   display: flex;
-  justify-content: center; /* Push image to the right */
+  justify-content: center;
   align-items: center;
   max-width: 50%;
+  padding: clamp(1rem, 2vw, 1.5rem) 0;
 }
 
 .gta-header-image img {
   width: 100%;
-  max-width: 750px; /* Bigger image */
+  max-width: 750px;
   height: auto;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.gta-header-image img:hover {
+  transform: scale(1.02);
 }
 
 /* Cards / Grid Section */
 .gta-project-cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* Centers cards on all screens */
-  gap: 2rem;
+  justify-content: center;
+  gap: clamp(1.5rem, 3vw, 2rem);
+  margin-top: clamp(2rem, 4vw, 3rem);
 }
 
 /* Individual Card */
@@ -105,12 +114,18 @@
   background: #fff;
   border: 1px solid #eee;
   border-radius: 8px;
-  padding: 1rem;
+  padding: clamp(1rem, 2vw, 1.5rem);
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
   max-width: 500px;
   width: 90%;
-  margin: 0 auto; /* Ensure cards are centered */
+  margin: 0 auto;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gta-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
 /* Responsive Video */
@@ -135,7 +150,7 @@
 @media (max-width: 1024px) {
   .gta-header-content {
     flex-direction: row;
-    gap: 1.5rem;
+    gap: clamp(1rem, 2vw, 1.5rem);
   }
 
   .gta-header-paragraph {
@@ -147,33 +162,28 @@
   }
 
   .gta-project-cards {
-    gap: 1.5rem;
+    gap: clamp(1rem, 2vw, 1.5rem);
   }
 }
 
 /* Tablets (max-width 768px) */
 @media (max-width: 768px) {
   .gta-container {
-    padding: 0 1rem;
-    align-items: center;
-    justify-content: center;
+    padding: clamp(1rem, 2vw, 1.5rem);
   }
 
-
   .gta-header-content {
-    flex-direction: column; /* Stack text & image */
-    
+    flex-direction: column;
   }
 
   .gta-title-section {
     text-align: center;
   }
 
-
   .gta-header-paragraph {
     max-width: 100%;
-    padding:0;
-    align-items: flex-start; /* Align text to the left */
+    padding: 0;
+    align-items: flex-start;
     text-align: left;
   }
 
@@ -188,63 +198,56 @@
 
   .gta-project-cards {
     flex-direction: column;
-    gap: 1.5rem;
+    gap: clamp(1rem, 2vw, 1.5rem);
   }
 
   .gta-card {
     width: 100%;
     max-width: 90%;
-    margin: 0 auto; /* Center the card */
+    margin: 0 auto;
   }
 }
 
-/* Mobile Devices (max-width 480px) */
+/* Mobile Phones (max-width 480px) */
 @media (max-width: 480px) {
   .gta-container {
-    padding: 1rem;
-    margin: 20px auto;
+    padding: clamp(0.75rem, 1.5vw, 1rem);
   }
 
   .gta-title-section {
-    margin-bottom: 0rem;
-    text-align: center;
+    margin-bottom: clamp(0.75rem, 2vw, 1rem);
   }
 
   .gta-header-content {
-    flex-direction: column;
-    padding: 1rem;
+    gap: clamp(1rem, 2vw, 1.5rem);
   }
 
-
   .gta-header-paragraph {
-    align-items: flex-start;
-    text-align: left; /* Keep text left-aligned */
-    max-width: 100%;
+    font-size: clamp(0.85rem, 1vw, 0.95rem);
   }
 
   .gta-title-section h1 {
-    font-size: 1.6rem;
+    font-size: clamp(1.4rem, 3vw, 1.8rem);
   }
 
   .gta-title-section h2 {
-    font-size: 1rem;
+    font-size: clamp(0.9rem, 2.5vw, 1rem);
   }
 
   .gta-header-text {
-    font-size: 1rem;
+    font-size: clamp(0.85rem, 1vw, 0.95rem);
   }
 
   .gta-header-image {
-    max-width: 100%;
+    padding: clamp(0.75rem, 1.5vw, 1rem) 0;
   }
 
   .gta-header-image img {
-    max-width: 100%; /* Full width on small screens */
+    max-width: 100%;
   }
 
   .gta-card {
-    max-width: 350px;
-    padding:1px;
-    margin: 0 auto; /* Ensure cards are centered */
+    padding: clamp(0.75rem, 1.5vw, 1rem);
+    max-width: 100%;
   }
 }

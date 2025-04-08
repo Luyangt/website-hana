@@ -10,13 +10,12 @@
   flex-direction: column;
   max-width: 1200px;
   margin: 0 auto;
-  margin-bottom: 5rem;
-  padding: 5rem;
+  margin-bottom: clamp(2rem, 5vw, 5rem);
+  padding: clamp(2rem, 5vw, 5rem);
   background: transparent;
   font-family: 'Nunito', sans-serif;
   color: #333;
-  gap: 2rem;
-
+  gap: clamp(1rem, 3vw, 2rem);
 }
 
 /* Header Section */
@@ -25,14 +24,14 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  gap: 2rem;
-  margin-bottom: 3rem;
+  gap: clamp(1rem, 3vw, 2rem);
+  margin-bottom: clamp(2rem, 4vw, 3rem);
 }
 
 /* Header Text */
 .clocle-header-text {
   flex: 1 1 auto;
-  font-size: 1rem;
+  font-size: clamp(0.9rem, 1.1vw, 1rem);
   line-height: 1.6;
 }
 .clocle-title-section {
@@ -40,7 +39,7 @@
 }
 
 .clocle-title-section h1 {
-  font-size: 2.5rem;
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
   margin-bottom: 0.5rem;
   line-height: 1.2;
 }
@@ -48,7 +47,7 @@
 .clocle-title-section h2 {
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-size: 1.2rem;
+  font-size: clamp(0.9rem, 1.2vw, 1.2rem);
   color: #888; /* Lighter color for subheading */
   margin-bottom: 0.5rem;
 }
@@ -56,8 +55,8 @@
 .clocle-header-content {
   display: flex;
   flex-direction: row;
-  gap: 2rem;
-  margin-top: 2rem;
+  gap: clamp(1rem, 3vw, 2rem);
+  margin-top: clamp(1rem, 3vw, 2rem);
 }
 
 /* Paragraphs, Lists, etc. below Titles */
@@ -80,7 +79,7 @@
 }
 
 .clocle-header-img img {
-  max-width: 400px;
+  max-width: 100%;
   height: auto;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
@@ -93,9 +92,8 @@
   display: flex;
   justify-content: center;/* Centers the cards horizontally */
   align-items: center;
-  gap: 3rem;
-  margin-bottom: 3rem;
-
+  gap: clamp(1.5rem, 4vw, 3rem);
+  margin-bottom: clamp(2rem, 4vw, 3rem);
 }
 
 /* Card Styling */
@@ -103,26 +101,39 @@
   background: transparent;
   border: 1px solid #eee;
   border-radius: 8px;
-  padding: 1rem;
+  padding: clamp(0.75rem, 1.5vw, 1.5rem);
   text-align: center;
   box-shadow: 0 4px 8px rgba(0,0,0,0.05);
   max-width: 600px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
 
-  
+.clocle-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
 }
 
 .clocle-card img {
-  width: auto; 
-  height: 400px;
+  width: 100%; 
+  height: auto;
+  max-height: 400px;
+  object-fit: contain;
   border-radius: 4px;
   margin-bottom: 1rem;
 }
 
 .clocle-card h3 {
   margin: 0;
-  font-size: 1.0rem;
+  font-size: clamp(0.9rem, 1.1vw, 1.1rem);
   line-height: 1.2;
   color: #333;
+}
+
+.clocle-card .clocle-card-explain {
+  font-size: clamp(0.85rem, 1vw, 1rem);
+  line-height: 1.5;
+  color: #666;
+  margin-top: 0.5rem;
 }
 
 /* ======================= */
@@ -164,19 +175,19 @@
 /* Mobile screens */
 @media (max-width: 768px) {
   .clocle-container {
-    padding: 2rem;
+    padding: clamp(1.5rem, 3vw, 2rem);
   }
   
   .clocle-title-section h1 {
-    font-size: 2rem;
+    font-size: clamp(1.6rem, 3vw, 2rem);
   }
   
   .clocle-title-section h2 {
-    font-size: 1rem;
+    font-size: clamp(0.8rem, 1vw, 1rem);
   }
 
   .clocle-header-paragraph {
-    font-size: 1rem;
+    font-size: 0.95rem;
     text-align: left;
   }
 
@@ -191,29 +202,20 @@
   .clocle-card {
     max-width: 90%;
   }
-  
-  .clocle-card img {
-    width: 100%;
-    height: auto;
-  }
-  .clocle-card .clocle-card-explain {
-    font-size: 0.8rem;
-  }
-
 }
 
 /* Small mobile screens */
 @media (max-width: 480px) {
   .clocle-container {
-    padding: 1.5rem;
+    padding: clamp(1rem, 2vw, 1.5rem);
   }
   
   .clocle-title-section h1 {
-    font-size: 1.8rem;
+    font-size: clamp(1.4rem, 2.5vw, 1.8rem);
   }
   
   .clocle-title-section h2 {
-    font-size: 0.9rem;
+    font-size: clamp(0.75rem, 0.9vw, 0.9rem);
   }
   
   .clocle-header-text {
@@ -223,14 +225,8 @@
   .clocle-header-img img {
     width: 100%;
   }
-
   
-  .clocle-card img {
-    width: 100%;
-    height: auto;
+  .clocle-card {
+    max-width: 100%;
   }
-  .clocle-card .clocle-card-explain {
-    font-size: 0.8rem;
-  }
-
 }

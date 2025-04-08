@@ -3,16 +3,18 @@
   justify-content: space-between;
   background-color: white;
   align-items: center;
-  padding: 20px; 
+  padding: clamp(1rem, 2vw, 1.25rem);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid #4d5f70; 
+  border-bottom: 1px solid #4d5f70;
+  width: 100%;
 }
 
 .header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1200px;
+  width: 90%;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -20,20 +22,29 @@
   width: 100%;
   height: auto;
 }
+
 .logo img {
-  max-width: 100px;
+  width: clamp(60px, 8vw, 100px);
   height: auto;
 }
 
-.header nav a, .header nav .link {
-  margin: 0 20px;
+.header nav {
+  display: flex;
+  align-items: center;
+  gap: clamp(1rem, 2vw, 1.25rem);
+}
+
+.header nav a,
+.header nav .link {
   text-decoration: none;
   color: black;
   font-weight: 600;
-  font-size: 20px;
+  font-size: clamp(0.9rem, 1.2vw, 1.25rem);
+  white-space: nowrap;
 }
 
-.header nav a:hover, .header nav .link:hover {
+.header nav a:hover,
+.header nav .link:hover {
   color: #A8E6FF;
 }
 
@@ -41,54 +52,53 @@
 /* RESPONSIVE DESIGN */
 /* ======================= */
 
-/* For tablet screens */
-@media (max-width: 992px) {
-.header-container {
-  width: 100%;
-  padding: 0 20px;
-}
-
-.logo {
-  width: 90%;
-  height: auto;
-}
-.logo img {
-  max-width: 90px;
-  height: auto;
-}
-
-.header nav a, .header nav .link {
-  margin: 0 10px;
-  font-size: 16px;
-}
-}
-
-/* For mobile screens */
 @media (max-width: 768px) {
-.header {
-  flex-direction: column;
-  align-items: flex-start;
+  .header {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .header-container {
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .logo {
+    width: auto;
+  }
+
+  .header nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+  }
+
+  .header nav a,
+  .header nav .link {
+    font-size: 0.9rem;
+  }
 }
 
-.header-container {
-  flex-direction: column;
-  align-items: flex-start;
-}
-.logo {
-  width: 80%;
-  height: auto;
-}
-.logo img {
-  max-width: 80px;
-  height: auto;
-}
+@media (max-width: 480px) {
+  .header {
+    padding: 0.75rem;
+  }
 
-.header nav {
-  margin-top: 10px;
-}
+  .header-container {
+    gap: 0.75rem;
+  }
 
-.header nav a, .header nav .link {
-  margin: 5px 10px;
-  font-size: 15px;
-}
+  .logo img {
+    width: clamp(50px, 6vw, 80px);
+  }
+
+  .header nav {
+    gap: 0.5rem;
+  }
+
+  .header nav a,
+  .header nav .link {
+    font-size: 0.8rem;
+  }
 }

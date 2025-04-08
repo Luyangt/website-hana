@@ -4,44 +4,45 @@
   margin: 0 auto;
   box-sizing: border-box;
 }
+
 .project-header {
   background-color: black;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 4rem 2rem;
+  padding: clamp(2rem, 4vw, 4rem) clamp(1rem, 2vw, 2rem);
   color: #fff; /* White text on dark background */
-  height: 500px; /* Ensures a tall banner */
+  min-height: clamp(300px, 50vh, 500px); /* Responsive height */
   width: 100%;
   margin: 0;
-  gap: 3rem; /* Add space between text and image */
+  gap: clamp(1.5rem, 3vw, 3rem); /* Responsive gap */
 }
 
 .project-header-text {
-  flex: 0 0 auto;
-}
-
-.project-header-text h1 {
-  font-size: 5rem;
-  line-height: 4.5rem;
-  margin-bottom: 1rem;
-}
-
-.project-header-text p {
-  font-size: 1.1rem;
-  line-height: 1.6;
+  flex: 1;
   max-width: 600px;
 }
 
+.project-header-text h1 {
+  font-size: clamp(2.5rem, 5vw, 5rem);
+  line-height: 1.2;
+  margin-bottom: clamp(0.5rem, 1vw, 1rem);
+}
+
+.project-header-text p {
+  font-size: clamp(0.9rem, 1.1vw, 1.1rem);
+  line-height: 1.6;
+  max-width: 100%;
+}
+
 .project-header-image {
-  flex: 0 0 auto;
+  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
   max-width: 50%;
   border: none;
   outline: none;
- 
 }
 
 .project-header-image img {
@@ -51,43 +52,44 @@
   box-shadow: none;
 } 
 
-
 /* Container for the entire section */
 .project-topics-link {
+  width: 90%;
   max-width: 1200px;
   height: auto; 
   margin: 0 auto;
-  padding: 2rem ;
+  padding: clamp(1rem, 2vw, 2rem);
 }
 
 /* Section title */
 .project-topics-title {
   text-align: center;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-  font-size: 1.8rem;
+  margin: clamp(2.5rem, 5vw, 5rem) 0;
+  font-size: clamp(1.4rem, 1.8vw, 1.8rem);
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
 /* Single row of cards */
 .project-topics-list {
-  display: flex;         /* One row of cards */
-  gap: 2rem;             /* Space between cards */
-  justify-content: center; /* Center them horizontally (optional) */
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: clamp(1.5rem, 3vw, 2rem);
+  justify-content: center;
 }
 
 /* Clickable link styles */
 .topic-link {
   text-decoration: none;
   color: inherit;
+  display: block;
+  height: 100%;
 }
 
 .project-topic-item h3 {
-  font-size: 3rem;
-  line-height: 4.5rem;
-  margin-bottom: 1rem;
+  font-size: clamp(2rem, 3vw, 3rem);
+  line-height: 1.2;
+  margin-bottom: clamp(0.5rem, 1vw, 1rem);
 }
 
 /* Card container */
@@ -96,16 +98,17 @@
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   overflow: hidden; /* ensures the top border & image corners are neat */
-  transition: transform 0.2s;
+  transition: transform 0.2s, box-shadow 0.3s;
   display: flex;
   flex-direction: column;
-  height: 300px;
-  width: 300px;
+  height: 100%;
+  width: 100%;
 }
 
 /* Hover effect */
 .topic-card:hover {
-  transform: scale(1.02);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
 }
 
 /* Colored bar at the top of each card */
@@ -117,120 +120,141 @@
 /* Card image */
 .topic-card img {
   width: 100%;
-  max-height: 200px; 
+  aspect-ratio: 16/9;
   object-fit: cover;
   display: block;
-  margin-bottom: 0.5rem;
 }
 
+/* Card text */
+.topic-text {
+  padding: clamp(0.75rem, 1.5vw, 1.5rem);
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
 .topic-text h3 {
-  font-size: 1.2rem;
+  font-size: clamp(1rem, 1.2vw, 1.2rem);
   margin-bottom: 0.5rem;
   color: #333;
   text-align: center;
 }
 
+.topic-text p {
+  font-size: clamp(0.85rem, 1vw, 1rem);
+  line-height: 1.5;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
 /* Main Content Section */
 .project-main-content {
-  margin-top: 40px;
+  margin-top: clamp(2rem, 4vw, 4rem);
   clear: both;
   width: 100%;
 }
 
+/* ======================= */
+/* RESPONSIVE DESIGN */
+/* ======================= */
 
-
-/* 🛠️ Adjust header for smaller screens */
 @media (max-width: 992px) {
   .project-header {
-    flex-direction: column; /* Stack text and image */
-    text-align: center; /* Center text */
-    align-items: center;
-    padding: 0 1rem;
-    gap: 2rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: clamp(1.5rem, 3vw, 2rem) clamp(1rem, 2vw, 1.5rem);
+  }
+
+  .project-header-text {
+    flex: 1 1 100%;
+    max-width: 100%;
+    text-align: center;
   }
 
   .project-header-text h1 {
-    font-size: 3rem;
-    line-height: 3.5rem;
+    font-size: clamp(2rem, 3vw, 3rem);
   }
 
   .project-header-text p {
-    font-size: 1rem;
+    font-size: clamp(0.8rem, 1vw, 1rem);
     max-width: 100%;
   }
 
   .project-header-image {
-    max-width: 80%; /* Reduce image size for better fit */
+    flex: 1 1 100%;
+    max-width: 80%;
+    margin: 0 auto;
   }
+  
   .project-topics-link {
     width: 100%;
-    height: auto; /* Adjust height for mobile layout */
-    padding: 1rem; /* Adjust padding for mobile layout */
+    padding: clamp(1rem, 2vw, 1.5rem);
+  }
+  
+  .project-topics-list {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
 }
 
-/* 📱 Improve layout for mobile screens */
 @media (max-width: 768px) {
-
   .project-header {
-    height: 450px;
+    flex-direction: column;
+    padding: clamp(1rem, 2vw, 1.5rem);
+    gap: clamp(1rem, 2vw, 1.5rem);
+  }
+
+  .project-header-text h1 {
+    font-size: clamp(1.8rem, 2.5vw, 2.5rem);
   }
 
   .project-topics-link {
     width: 100%;
-    height: auto; /* Adjust height for mobile layout */
-    padding: 1rem; /* Adjust padding for mobile layout */
+    padding: 1rem;
   }
 
-
   .project-topics-list {
-    flex-direction: column; /* Stack cards vertically */
-    align-items: center;
+    grid-template-columns: 1fr;
     gap: 1.5rem;
-    margin-bottom: 2rem;
   }
 
   .topic-card {
-    width: 90%; /* Allow cards to take more space */
-    height: auto;
+    max-width: 100%;
   }
 
   .topic-text h3 {
-    font-size: 1rem; /* Adjust text size for smaller screens */
+    font-size: 1rem;
   }
 
   .project-main-content {
-    margin-top: 3rem; /* Adjust for mobile layout */
+    margin-top: 2rem;
   }
 }
 
-/* 📱 Mobile-friendly adjustments */
 @media (max-width: 480px) {
   .project-header {
-    height: 450px;
+    padding: 1rem;
+    gap: 1rem;
   }
 
-  .project-topics-link {
-    width: 100%;
-    height: auto; /* Adjust height for mobile layout */
-    padding: 1rem; /* Adjust padding for mobile layout */
-  }
-  
   .project-header-text h1 {
-    font-size: 2.5rem;
-    line-height: 3rem;
+    font-size: clamp(1.5rem, 2vw, 2rem);
   }
 
   .project-header-image {
-    max-width: 90%;
+    max-width: 100%;
   }
 
   .project-header-text p {
     font-size: 0.9rem;
   }
 
-  .topic-card {
-    width: 100%; /* Full width on mobile */
+  .project-topics-link {
+    padding: 0.75rem;
+  }
+  
+  .project-topics-title {
+    font-size: 1.2rem;
+    margin: 1.5rem 0;
   }
 }

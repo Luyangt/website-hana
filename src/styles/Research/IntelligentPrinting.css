@@ -2,13 +2,17 @@
 .threeD-overall-container {
   width: 100%;
   background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: clamp(1rem, 3vw, 2rem) 0;
 }
 
 /* Inner container */
 .threeD-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: clamp(1rem, 2vw, 2rem);
   background: transparent;
   font-family: 'Nunito', sans-serif;
   color: #333;
@@ -16,14 +20,14 @@
 
 /* Header Section */
 .threeD-header-section {
-  margin-bottom: 3rem;
+  margin-bottom: clamp(1.5rem, 3vw, 3rem);
 }
 
 .threeD-title-section h1 {
   text-align: center;
-  font-size: 2.3rem;
+  font-size: clamp(1.5rem, 3vw, 2.3rem);
   font-weight: 700;
-  margin-bottom: 2rem;
+  margin-bottom: clamp(1rem, 2vw, 2rem);
   line-height: 1.3;
 }
 
@@ -31,19 +35,19 @@
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  gap: 2rem;
+  gap: clamp(1rem, 2vw, 2rem);
 }
 
 /* Header Text */
 .threeD-header-text {
   flex: 0 0 60%;
-  font-size: 1rem;
+  font-size: clamp(0.9rem, 1vw, 1rem);
   line-height: 1.6;
 }
 
 /* Paragraphs, Lists, etc. below Titles */
 .threeD-header-text p {
-  margin-bottom: 1rem;
+  margin-bottom: clamp(0.75rem, 1vw, 1rem);
 }
 
 /* Header Image */
@@ -55,49 +59,69 @@
   background-color: transparent;
   border: none;
   outline: none;
-  margin-top: 1rem;
+  margin-top: clamp(0.75rem, 1vw, 1rem);
 }
 
 .threeD-header-img img {
-  width: 600px;
+  width: 100%;
+  max-width: 600px;
   height: auto;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.threeD-header-img img:hover {
+  transform: scale(1.02);
 }
 
 /* Cards / Grid Section */
 .threeD-project-cards {
   display: flex;
   flex-direction: row;
-  justify-content: center; /* Centers the cards horizontally */
+  justify-content: center;
   align-items: center;
-  gap: 8rem;
+  gap: clamp(2rem, 8vw, 8rem);
   max-width: 1200px;
 }
 
 /* Card Styling */
 .threeD-card {
   background: transparent;
-  padding: 1rem;
+  padding: clamp(0.75rem, 1vw, 1rem);
   text-align: center;
   max-width: 600px;
-  margin-top: 2rem;
+  margin-top: clamp(1rem, 2vw, 2rem);
+  transition: transform 0.3s ease;
+}
+
+.threeD-card:hover {
+  transform: translateY(-5px);
 }
 
 #threeD-card1 img {
-  width: auto;
-  height: 660px;
+  width: 100%;
+  height: auto;
   max-width: 600px;
+  max-height: 660px;
   border-radius: 4px;
-  margin-bottom: 1rem;
+  margin-bottom: clamp(0.75rem, 1vw, 1rem);
+  transition: transform 0.3s ease;
 }
 
 #threeD-card2 img {
-  width: auto;
-  height: 700px;
+  width: 100%;
+  height: auto;
   max-width: 600px;
+  max-height: 700px;
   border-radius: 4px;
-  margin-bottom: 1rem;
+  margin-bottom: clamp(0.75rem, 1vw, 1rem);
+  transition: transform 0.3s ease;
+}
+
+#threeD-card1 img:hover,
+#threeD-card2 img:hover {
+  transform: scale(1.02);
 }
 
 /* ======================= */
@@ -118,7 +142,7 @@
 
   .threeD-header-img {
     max-width: 100%;
-    margin-bottom: 1.5rem;
+    margin-bottom: clamp(1rem, 1.5vw, 1.5rem);
   }
 
   .threeD-header-img img {
@@ -128,7 +152,7 @@
 
   .threeD-project-cards {
     flex-direction: column;
-    gap: 4rem;
+    gap: clamp(2rem, 4vw, 4rem);
   }
 
   .threeD-card {
@@ -146,15 +170,15 @@
 /* For mobile screens */
 @media (max-width: 768px) {
   .threeD-container {
-    padding: 1.5rem;
+    padding: clamp(0.75rem, 1.5vw, 1.5rem);
   }
 
   .threeD-title-section h1 {
-    font-size: 2rem;
+    font-size: clamp(1.4rem, 2.5vw, 2rem);
   }
 
   .threeD-header-text {
-    font-size: 0.9rem;
+    font-size: clamp(0.85rem, 0.95vw, 0.9rem);
   }
 
   .threeD-header-img img {
@@ -162,7 +186,7 @@
   }
 
   .threeD-project-cards {
-    gap: 2rem;
+    gap: clamp(1rem, 2vw, 2rem);
   }
 
   .threeD-card {
@@ -173,15 +197,15 @@
 /* For small mobile screens */
 @media (max-width: 480px) {
   .threeD-container {
-    padding: 1rem;
+    padding: clamp(0.5rem, 1vw, 1rem);
   }
 
   .threeD-title-section h1 {
-    font-size: 1.8rem;
+    font-size: clamp(1.2rem, 2vw, 1.8rem);
   }
 
   .threeD-header-text {
-    font-size: 0.85rem;
+    font-size: clamp(0.8rem, 0.9vw, 0.85rem);
   }
 
   .threeD-header-img img {
@@ -189,7 +213,7 @@
   }
 
   .threeD-project-cards {
-    gap: 1.5rem;
+    gap: clamp(0.75rem, 1.5vw, 1.5rem);
   }
 
   .threeD-card {

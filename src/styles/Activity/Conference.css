@@ -6,30 +6,30 @@
 .cf-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 3rem;
+  padding: clamp(2rem, 5vw, 3rem);
   background: transparent;
   font-family: 'Nunito', sans-serif;
   color: #333;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  gap: clamp(1rem, 3vw, 2rem);
 }
 
 .cf-title-section h1 {
   text-align: center;
-  font-size: 3rem;
+  font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 800;
-  margin-bottom: 2rem;
+  margin-bottom: clamp(1rem, 3vw, 2rem);
   line-height: 1.3;
 }
 
 .cf-paragraph {
   flex: 1;
   text-align: start;
-  font-size: 1rem;
+  font-size: clamp(0.9rem, 1.1vw, 1rem);
   line-height: 1.6;
-  margin-top: 1.5rem;
+  margin-top: clamp(1rem, 2vw, 1.5rem);
 }
 
 .cf-paragraph p {
@@ -42,12 +42,15 @@
   margin: 0 auto;
   display: flex;
   justify-content: center;
+  padding: clamp(1rem, 2vw, 2rem) 0;
 }
 
 .cf-image img {
-  width: 1000px;
+  width: 100%;
+  max-width: 1000px;
   height: auto;
   border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 /* ======================= */
@@ -57,11 +60,11 @@
 /* For tablets (up to 992px) */
 @media (max-width: 992px) {
   .cf-container {
-      padding: 2rem;
+      padding: clamp(1.5rem, 3vw, 2rem);
   }
 
   .cf-title-section h1 {
-      font-size: 2.5rem;
+      font-size: clamp(1.8rem, 3vw, 2.5rem);
   }
 
   .cf-image {
@@ -74,7 +77,7 @@
   }
 
   .cf-paragraph {
-      font-size: 1rem;
+      font-size: 0.95rem;
       text-align: center;
   }
 }
@@ -82,11 +85,11 @@
 /* For mobile screens (up to 768px) */
 @media (max-width: 768px) {
   .cf-container {
-      padding: 2rem 1.5rem;
+      padding: clamp(1.5rem, 2.5vw, 2rem) clamp(1rem, 2vw, 1.5rem);
   }
 
   .cf-title-section h1 {
-      font-size: 2rem;
+      font-size: clamp(1.6rem, 2.5vw, 2rem);
   }
 
   .cf-image img {
@@ -95,7 +98,7 @@
   }
 
   .cf-paragraph {
-      font-size: 0.95rem;
+      font-size: 0.9rem;
       text-align: center;
   }
 }
@@ -103,11 +106,11 @@
 /* For small mobile screens (up to 480px) */
 @media (max-width: 480px) {
   .cf-container {
-      padding: 1.5rem 1rem;
+      padding: clamp(1rem, 2vw, 1.5rem) clamp(0.75rem, 1.5vw, 1rem);
   }
 
   .cf-title-section h1 {
-      font-size: 1.8rem;
+      font-size: clamp(1.4rem, 2vw, 1.8rem);
   }
 
   .cf-image img {
@@ -115,7 +118,7 @@
   }
 
   .cf-paragraph {
-      font-size: 0.9rem;
+      font-size: 0.85rem;
       text-align: center;
   }
 }

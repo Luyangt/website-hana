@@ -10,32 +10,33 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 4rem 2rem;
+  padding: clamp(2rem, 4vw, 4rem) clamp(1rem, 2vw, 2rem);
   color: #fff; /* White text on dark background */
-  min-height: 300px; /* Ensures a tall banner */
+  min-height: clamp(250px, 40vh, 500px); /* Responsive height */
   width: 100%;
   margin: 0;
-  gap: 3rem; /* Add space between text and image */
+  gap: clamp(1.5rem, 3vw, 3rem); /* Responsive gap */
 }
 
 .research-header-text {
-  flex: 0 0 auto;
-}
-
-.research-header-text h1 {
-  font-size: 5rem;
-  line-height: 4.5rem;
-  margin-bottom: 1rem;
-}
-
-.research-header-text p {
-  font-size: 1.1rem;
-  line-height: 1.6;
+  flex: 1;
   max-width: 600px;
 }
 
+.research-header-text h1 {
+  font-size: clamp(2.5rem, 5vw, 5rem);
+  line-height: 1.2;
+  margin-bottom: clamp(0.5rem, 1vw, 1rem);
+}
+
+.research-header-text p {
+  font-size: clamp(0.9rem, 1.1vw, 1.1rem);
+  line-height: 1.6;
+  max-width: 100%;
+}
+
 .research-header-image {
-  flex: 0 0 auto;
+  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -53,47 +54,35 @@
 
 /* Research Topics Link Section */
 .research-topics-link {
+  width: 90%;
   max-width: 1200px;
   height: auto; 
   margin: 0 auto;
-  padding: 2rem;
+  padding: clamp(1rem, 2vw, 2rem);
 }
 
 .research-topics-title {
   text-align: center;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-  font-size: 1.8rem;
+  margin: clamp(2.5rem, 5vw, 5rem) 0;
+  font-size: clamp(1.4rem, 1.8vw, 1.8rem);
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
 /* Research Topics List */
 .research-topics-list {
-  display: flex;
-  flex-direction: column;
-  gap: 6rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: clamp(1.5rem, 3vw, 3rem);
   justify-content: center;
-  flex-wrap: wrap;
-}
-
-/* Each row of cards */
-.topic-row {
-  display: flex;
-  justify-content: center;
-}
-
-#topic-row-1 {
-  gap: 3rem;
-}
-#topic-row-2 {
-  gap: 2rem;
 }
 
 /* Research Topic Link */
 .research-topic-link {
   text-decoration: none;
   color: inherit;
+  height: 100%;
+  display: block;
 }
 
 /* Research Topic Card */
@@ -105,8 +94,8 @@
   transition: transform 0.2s;
   display: flex;
   flex-direction: column;
-  width: 260px;
-  height: 260px; /* Fixed height on desktop */
+  height: 200px;
+  width: 100%;
 }
 
 .research-topic-item:hover {
@@ -120,17 +109,28 @@
   background-color: #007bff;
 }
 
+.research-topic-item .topic-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0.25rem 0.75rem 0.5rem;
+  text-align: center;
+}
+
 .research-topic-item .topic-text h3 {
-  text-align: center!important;
-  font-size: 1rem;
-  margin-top: 1.5rem;
+  text-align: center !important;
+  font-size: clamp(0.9rem, 1vw, 1rem);
+  margin-top: 0.25rem;
   line-height: 1.2;
+  padding: 0;
 }
 
 /* Image inside the card */
 .research-topic-item img {
   width: 100%;
-  height: 180px;     /* Consistent image height */
+  height: 130px;
   object-fit: cover; /* Crop to fit if aspect ratios differ */
   border-radius: 8px;
   box-shadow: none;
@@ -138,131 +138,95 @@
 
 /* Main Content Section */
 .research-main-content {
-  margin-top: 40px;
+  margin-top: clamp(2rem, 4vw, 4rem);
 }
 
 .research-section {
-  margin-bottom: 40px;
+  margin-bottom: clamp(2rem, 4vw, 4rem);
 }
 
 /* ======================= */
 /* RESPONSIVE DESIGN */
 /* ======================= */
 
-/* For tablets (up to 992px) */
 @media (max-width: 992px) {
-  /* Adjust header and image sizing */
   .research-header {
-    padding: 2rem 1rem;
-    gap: 1.5rem;
-  }
-  .research-header-text {
-    max-width: 100%;
-  }
-  .research-header-image {
-    max-width: 100%;
-  }
-  /* Let the topics link section adjust its height */
-  .research-topics-link {
-    width: 100%;
-    height: auto;
-    padding: 2rem 1rem;
-  }
-  /* Make rows wrap if needed and center items */
-  .topic-row {
+    flex-direction: row;
     flex-wrap: wrap;
-    gap: 2rem;
-    align-items: center;
+    padding: clamp(1.5rem, 3vw, 2rem) clamp(1rem, 2vw, 1.5rem);
   }
-  /* Keep consistent card size */
-  .research-topic-item {
-    width: 45%;
-    max-width: 260px;
-    height: 260px;  /* Retain fixed height */
-    margin-bottom: 1rem;
+  
+  .research-header-text {
+    flex: 1 1 100%;
+    max-width: 100%;
+    text-align: center;
   }
-  .research-topic-item img {
-    height: 180px;
+  
+  .research-header-image {
+    flex: 1 1 100%;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  
+  .research-topics-list {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
-/* For mobile screens (up to 768px) */
 @media (max-width: 768px) {
   .research-header {
     flex-direction: column;
-    padding: 1.5rem 1rem;
-    gap: 1.5rem;
+    padding: clamp(1rem, 2vw, 1.5rem);
+    gap: clamp(1rem, 2vw, 1.5rem);
   }
+  
   .research-header-text h1 {
-    font-size: 3.5rem;
-    line-height: 3.5rem;
+    font-size: clamp(2rem, 4vw, 3.5rem);
   }
+  
   .research-header-text p {
-    font-size: 1rem;
+    font-size: clamp(0.8rem, 1vw, 1rem);
   }
+  
   .research-header-image {
-    margin-top: 1rem;
+    max-width: 100%;
   }
-  .research-topics-link {
-    width: 100%;
-    height: auto;
-    padding: 2rem 1rem;
-  }
-
+  
   .research-topics-title {
-    font-size: 1.5rem;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    font-size: clamp(1.2rem, 1.5vw, 1.5rem);
+    margin: clamp(1.5rem, 3vw, 3rem) 0;
   }
-  .topic-row {
-    flex-direction: column;
-    gap: 1.5rem;
-    align-items: center;
-  }
-  .research-topic-item {
-    width: 100%;
-    max-width: 300px;
-    height: 260px; /* Keep the same height */
-  }
-  .research-topic-item img {
-    height: 180px;
+  
+  .research-topics-list {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* For small mobile screens (up to 480px) */
 @media (max-width: 480px) {
   .research-header {
     padding: 1rem;
     gap: 1rem;
   }
+  
   .research-header-text h1 {
-    font-size: 2.5rem;
-    line-height: 3rem;
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
   }
+  
   .research-header-text p {
     font-size: 0.9rem;
   }
+  
   .research-topics-link {
     width: 100%;
-    height: auto;
-    margin: 0 auto;
-    padding: 2rem 1rem;
+    padding: 1rem;
   }
-
+  
   .research-topics-title {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+    margin: 1.5rem 0;
   }
-  .topic-row {
-    flex-direction: column;
-    gap: 1.5rem;
-    align-items: center;
-  }
-  .research-topic-item {
-    width: 100%;
-    max-width: 280px;
-    height: 260px; /* Still fixed */
-  }
-  .research-topic-item img {
-    height: 180px;
+  
+  .research-topics-list {
+    grid-template-columns: 1fr;
   }
 }

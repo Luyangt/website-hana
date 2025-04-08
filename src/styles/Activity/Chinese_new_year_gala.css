@@ -6,28 +6,28 @@
 .gala-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 3rem;
+    padding: clamp(2rem, 5vw, 3rem);
     background: transparent;
     font-family: 'Nunito', sans-serif;
     color: #333;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
+    gap: clamp(1rem, 3vw, 2rem);
 }
 
 .gala-title-section h1 {
     text-align: center;
-    font-size: 2rem;
+    font-size: clamp(1.6rem, 3vw, 2rem);
     font-weight: 800;
-    margin-bottom: 2rem;
+    margin-bottom: clamp(1rem, 3vw, 2rem);
     line-height: 1.3;
 }
 
 .gala-paragraph {
     flex: 1;
     text-align: start;
-    font-size: 1rem;
+    font-size: clamp(0.9rem, 1.1vw, 1rem);
     line-height: 1.6;
 }
 
@@ -41,12 +41,15 @@
     margin: 0 auto;
     display: flex;
     justify-content: center;
+    padding: clamp(1rem, 2vw, 2rem) 0;
 }
 
 .gala-image img {
-    width: 1000px;
+    width: 100%;
+    max-width: 1000px;
     height: auto;
     border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 /* ======================= */
@@ -56,11 +59,11 @@
 /* For tablets (up to 992px) */
 @media (max-width: 992px) {
     .gala-container {
-        padding: 2rem;
+        padding: clamp(1.5rem, 3vw, 2rem);
     }
 
     .gala-title-section h1 {
-        font-size: 1.8rem;
+        font-size: clamp(1.5rem, 2.5vw, 1.8rem);
     }
 
     .gala-image {
@@ -73,7 +76,7 @@
     }
 
     .gala-paragraph {
-        font-size: 1rem;
+        font-size: 0.95rem;
         text-align: center;
     }
 }
@@ -81,11 +84,11 @@
 /* For mobile screens (up to 768px) */
 @media (max-width: 768px) {
     .gala-container {
-        padding: 2rem 1.5rem;
+        padding: clamp(1.5rem, 2.5vw, 2rem) clamp(1rem, 2vw, 1.5rem);
     }
 
     .gala-title-section h1 {
-        font-size: 1.6rem;
+        font-size: clamp(1.4rem, 2vw, 1.6rem);
     }
 
     .gala-image img {
@@ -94,7 +97,7 @@
     }
 
     .gala-paragraph {
-        font-size: 1rem;
+        font-size: 0.9rem;
         text-align: center;
     }
 }
@@ -102,11 +105,11 @@
 /* For small mobile screens (up to 480px) */
 @media (max-width: 480px) {
     .gala-container {
-        padding: 1.5rem 1rem;
+        padding: clamp(1rem, 2vw, 1.5rem) clamp(0.75rem, 1.5vw, 1rem);
     }
 
     .gala-title-section h1 {
-        font-size: 1.4rem;
+        font-size: clamp(1.2rem, 1.8vw, 1.4rem);
     }
 
     .gala-image img {
@@ -114,7 +117,7 @@
     }
 
     .gala-paragraph {
-        font-size: 1rem;
+        font-size: 0.85rem;
         text-align: center;
     }
 }
